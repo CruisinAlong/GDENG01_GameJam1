@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private float maxJumpTime = 0.5f;
+    [SerializeField] private float baseJumpForce = 5f;
+    [SerializeField] private float maxJumpForce = 10f; // Maximum jump force
+    [SerializeField] private float maxJumpTime = 0.5f; // Maximum time to reach max jump force
     [SerializeField] private float speed = 10.0f;
+    [SerializeField] private Camera playerCamera;  // Reference to the camera
+    [SerializeField] private float forwardJumpMultiplier = 2.0f; // Multiplier for forward jump distance
 
     private Rigidbody rb;
     private bool isGrounded;
     private bool isJumping;
+    private bool jumpKeyHeld;
     private float jumpTimeCounter;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -34,7 +38,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         this.InputListener();
-        this.Move();
+
+        if (!jumpKeyHeld)
+        {
+            this.Move();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -42,6 +50,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            isJumping = false;
         }
     }
 
@@ -49,63 +58,59 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            StartJump();
+            jumpKeyHeld = true;
+            isJumping = true;
+            jumpTimeCounter = 0f;
         }
         else if (Input.GetKey(KeyCode.Space) && isJumping)
         {
-            ContinueJump();
+            // Increase jump time counter while space is held
+            jumpTimeCounter += Time.deltaTime;
         }
         else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
-            EndJump();
+            jumpKeyHeld = false;
+            StartJump();
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (!jumpKeyHeld)
         {
-            Debug.Log("Forward");
-            currentDir = Direction.FORWARD;
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            currentDir = Direction.BACKWARD;
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            currentDir = Direction.LEFT;
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            currentDir = Direction.RIGHT;
-        }
-        else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
-        {
-            currentDir = Direction.NONE;
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                currentDir = Direction.FORWARD;
+            }
+            else if (Input.GetKeyDown(KeyCode.S))
+            {
+                currentDir = Direction.BACKWARD;
+            }
+            else if (Input.GetKeyDown(KeyCode.A))
+            {
+                currentDir = Direction.LEFT;
+            }
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
+                currentDir = Direction.RIGHT;
+            }
+            else if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D))
+            {
+                currentDir = Direction.NONE;
+            }
         }
     }
 
     private void StartJump()
     {
-        isJumping = true;
-        jumpTimeCounter = maxJumpTime;
-        rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-    }
+        // Cap the jump time to the maximum allowed time
+        float clampedJumpTime = Mathf.Clamp(jumpTimeCounter, 0f, maxJumpTime);
 
-    private void ContinueJump()
-    {
-        if (jumpTimeCounter > 0)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-            jumpTimeCounter -= Time.deltaTime;
-        }
-        else
-        {
-            isJumping = false;
-        }
-    }
+        // Calculate the jump force based on how long the space bar was held
+        float jumpForce = Mathf.Lerp(baseJumpForce, maxJumpForce, clampedJumpTime / maxJumpTime);
 
-    private void EndJump()
-    {
-        isJumping = false;
+        // Calculate forward jump direction and force
+        Vector3 jumpDirection = playerCamera.transform.forward * forwardJumpMultiplier * (clampedJumpTime / maxJumpTime) + Vector3.up * jumpForce;
+
+        // Apply the jump force
+        rb.velocity = new Vector3(jumpDirection.x, jumpDirection.y, jumpDirection.z);
     }
 
     private void Move()
@@ -115,20 +120,21 @@ public class PlayerController : MonoBehaviour
         switch (currentDir)
         {
             case Direction.FORWARD:
-                moveDirection = Vector3.forward;
+                moveDirection = playerCamera.transform.forward;
                 break;
             case Direction.BACKWARD:
-                moveDirection = Vector3.back;
+                moveDirection = -playerCamera.transform.forward;
                 break;
             case Direction.LEFT:
-                moveDirection = Vector3.left;
+                moveDirection = -playerCamera.transform.right;
                 break;
             case Direction.RIGHT:
-                moveDirection = Vector3.right;
+                moveDirection = playerCamera.transform.right;
                 break;
         }
 
-        Vector3 movement = moveDirection * speed * Time.deltaTime;
+        moveDirection.y = 0; // Ensure the movement is horizontal
+        Vector3 movement = moveDirection.normalized * speed * Time.deltaTime;
         rb.MovePosition(transform.position + movement);
     }
 }
