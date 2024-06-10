@@ -403,6 +403,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/LoadManager/LoadManager.cs"
 "Assets/Scripts/LoadManager/SceneNames.cs"
+"Assets/Scripts/MainMenuScript.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ViewHandler/BlackOverlay.cs"
 "Assets/Scripts/ViewHandler/NullScreen.cs"

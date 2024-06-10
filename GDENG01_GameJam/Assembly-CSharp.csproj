@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\ViewHandler\Popups\DialogBuilder.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\ViewAnimation.cs" />
     <Compile Include="Assets\Scripts\Broadcasting\Parameters.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\Broadcasting\ObserverList.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\NullScreen.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class SceneNames {
 	public const string MAIN_SCENE = "MainScene";
 	public const string UI_DEMO_SCENE = "UIDemoScene";
+    public const string GAME_SCENE = "InitialScene";
 	public const string OBJECT_POOL_SCENE = "ObjectPoolScene";
 	public const string BROADCASTING_SCENE = "EventBroadcasterDemo";
 	public const string SCENE_LIGHTING = "SceneLighting";
