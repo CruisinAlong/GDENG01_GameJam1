@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float chargedJumpMultiplier = 1.5f;
     [SerializeField] public float speed = 10.0f;
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private CharacterController controller;
     [SerializeField] public float turnSmoothTime = 0.1f;
     [SerializeField] public float forwardJumpMultiplier = 2.0f;
     [SerializeField] public float climbSpeed = 5.0f;
@@ -18,9 +19,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Slider jumpForceSlider;
     [SerializeField] private Slider healthSlider; 
     [SerializeField] private float maxHealth = 100f; 
-    [SerializeField] private float fallDamageThreshold = 10f; 
+    [SerializeField] private float fallDamageThreshold = 10f;
 
+    private Animator animator;
     private Rigidbody rb;
+    private float turnSmoothVelocity;
     private bool isGrounded =false;
     private bool isJumping = false;
     private bool jumpKeyHeld = false;
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>(); 
         rb = GetComponent<Rigidbody>();
         jumpForceSlider.minValue = baseJumpForce;
         jumpForceSlider.maxValue = maxJumpForce * chargedJumpMultiplier;
@@ -95,28 +99,30 @@ public class PlayerController : MonoBehaviour
 
     private void InputListener()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isClimbing)
+        if (controller.isGrounded)
         {
-            jumpKeyHeld = true;
-            isJumping = true;
-            jumpTimeCounter = 0f;
-        }
-        else if (Input.GetKey(KeyCode.Space) && isJumping)
-        {
-            jumpTimeCounter += Time.deltaTime;
-            UpdateJumpForceSlider();
-        }
-        else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
-        {
-            isGrounded = false;
-            isJumping = false;
-            jumpKeyHeld = false;
-            isGrounded = false;
-            isJumping = false;
+            if (Input.GetKeyDown(KeyCode.Space) && !isClimbing)
+            {
+                jumpKeyHeld = true;
+                isJumping = true;
+                jumpTimeCounter = 0f;
+            }
+            else if (Input.GetKey(KeyCode.Space) && isJumping)
+            {
+                jumpTimeCounter += Time.deltaTime;
+                UpdateJumpForceSlider();
+            }
+            else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
+            {
+                isGrounded = false;
+                isJumping = false;
+                jumpKeyHeld = false;
+                isGrounded = false;
+                isJumping = false;
 
-            StartJump();
+                StartJump();
+            }
         }
-
     }
 
     private void StartJump()
@@ -139,7 +145,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 jumpDirection = forwardDirection * forwardJumpMultiplier * (jumpForce / maxJumpForce) + Vector3.up * jumpForce;
 
-        rb.velocity = new Vector3(jumpDirection.x, jumpDirection.y, jumpDirection.z);
+        controller.Move(jumpDirection * Time.deltaTime);
         jumpForceSlider.value = baseJumpForce;
     }
 
@@ -156,30 +162,24 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        moveDirection = Vector3.zero;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (Input.GetKey(KeyCode.W))
+        if(direction.magnitude >= 0.1f) 
         {
-            moveDirection += playerCamera.transform.forward;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveDirection -= playerCamera.transform.forward;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveDirection -= playerCamera.transform.right;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveDirection += playerCamera.transform.right;
-        }
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.transform.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y,targetAngle,ref turnSmoothVelocity,turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-        moveDirection.y = 0;
-        moveDirection.Normalize();
-
-        Vector3 movement = moveDirection * speed * Time.deltaTime;
-        rb.MovePosition(transform.position + movement);
+            Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
     }
 
     private void Climb()
