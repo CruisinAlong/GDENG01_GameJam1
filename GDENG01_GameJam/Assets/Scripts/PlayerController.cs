@@ -1,36 +1,35 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Add this line to use the UI components
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float baseJumpForce = 5f;
-    [SerializeField] private float maxJumpForce = 10f;
-    [SerializeField] private float maxJumpTime = 3f;
-    [SerializeField] private float chargedJumpMultiplier = 1.5f;
-    [SerializeField] private float speed = 10.0f;
+    [SerializeField] public float baseJumpForce = 5f;
+    [SerializeField] public float maxJumpForce = 10f;
+    [SerializeField] public float maxJumpTime = 3f;
+    [SerializeField] public float chargedJumpMultiplier = 1.5f;
+    [SerializeField] public float speed = 10.0f;
     [SerializeField] private Camera playerCamera;
-    [SerializeField] private float turnSmoothTime = 0.1f;
-    [SerializeField] private float forwardJumpMultiplier = 2.0f;
-    [SerializeField] private float climbSpeed = 5.0f;
+    [SerializeField] public float turnSmoothTime = 0.1f;
+    [SerializeField] public float forwardJumpMultiplier = 2.0f;
+    [SerializeField] public float climbSpeed = 5.0f;
     [SerializeField] private string climbableTag = "Climbable";
-    [SerializeField] private string checkTag = "Checkpoint";
     [SerializeField] private Slider jumpForceSlider;
-    [SerializeField] private Slider healthSlider;
-    [SerializeField] private float maxHealth = 100f;
-    [SerializeField] private float fallDamageThreshold = 10f;
+    [SerializeField] private Slider healthSlider; 
+    [SerializeField] private float maxHealth = 100f; 
+    [SerializeField] private float fallDamageThreshold = 10f; 
 
     private Rigidbody rb;
-    private bool isGrounded;
-    private bool isJumping;
-    private bool jumpKeyHeld;
+    private bool isGrounded =false;
+    private bool isJumping = false;
+    private bool jumpKeyHeld = false;
     private float jumpTimeCounter;
     private bool isClimbing;
     private Collider climbableObject;
-    private float currentHealth;
+    private float currentHealth; 
 
     private Vector3 moveDirection = Vector3.zero;
-    private CheckpointManager checkpointManager;
 
     void Start()
     {
@@ -39,38 +38,24 @@ public class PlayerController : MonoBehaviour
         jumpForceSlider.maxValue = maxJumpForce * chargedJumpMultiplier;
         jumpForceSlider.value = baseJumpForce;
 
-        currentHealth = maxHealth;
+        currentHealth = maxHealth; 
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
-
-        checkpointManager = FindAnyObjectByType<CheckpointManager>();
-        if (checkpointManager == null)
-        {
-            Debug.LogError("CheckpointManager not found in the scene.");
-        }
     }
 
     void Update()
     {
-        InputListener();
+        this.InputListener();
 
         if (isClimbing)
         {
-            Climb();
+            this.Climb();
         }
         else if (!jumpKeyHeld)
         {
-            Move();
+            this.Move();
         }
-
     }
-
-    private void Die()
-    {
-        Debug.Log("Died");
-        TakeDamage(currentHealth); 
-    }
-
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -79,14 +64,11 @@ public class PlayerController : MonoBehaviour
             isGrounded = true;
             isJumping = false;
 
+            // Handle fall damage
             if (rb.velocity.y < -fallDamageThreshold)
             {
                 TakeDamage(Mathf.Abs(rb.velocity.y));
             }
-        }
-        else
-        {
-            Debug.Log("Unrelated Collision GameObject");
         }
     }
 
@@ -98,11 +80,6 @@ public class PlayerController : MonoBehaviour
             climbableObject = other;
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
-        }
-        else if (other.CompareTag(checkTag))
-        {
-            checkpointManager.SetCheckpoint(other.transform.position);
-            Debug.Log("Checkpoint reached!");
         }
     }
 
@@ -131,16 +108,15 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
+            isGrounded = false;
+            isJumping = false;
             jumpKeyHeld = false;
             isGrounded = false;
             isJumping = false;
 
             StartJump();
         }
-        else if (Input.GetKeyDown(KeyCode.K))
-        {
-            Die();
-        }
+
     }
 
     private void StartJump()
@@ -199,7 +175,6 @@ public class PlayerController : MonoBehaviour
             moveDirection += playerCamera.transform.right;
         }
 
-
         moveDirection.y = 0;
         moveDirection.Normalize();
 
@@ -214,6 +189,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(transform.position + climbDirection);
     }
 
+
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
@@ -222,17 +198,8 @@ public class PlayerController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Player has died.");
-            checkpointManager.PlayerDied();
-        }
-    }
 
-    public void RespawnAtCheckpoint(Vector3 checkpointPosition)
-    {
-        transform.position = checkpointPosition;
-        rb.velocity = Vector3.zero;
-        currentHealth = maxHealth;
-        healthSlider.value = currentHealth;
-        Debug.Log("Respawned at checkpoint.");
+            Debug.Log("Player has died.");
+        }
     }
 }
