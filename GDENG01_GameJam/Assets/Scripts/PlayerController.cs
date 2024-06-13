@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float maxJumpForce = 10f;
     [SerializeField] public float maxJumpTime = 3f;
     [SerializeField] public float chargedJumpMultiplier = 1.5f;
-    [SerializeField] public float speed = 50.0f;
+    [SerializeField] public float speed = 10.0f;
     [SerializeField] private Camera playerCamera;
     [SerializeField] public float turnSmoothTime = 0.1f;
     [SerializeField] public float forwardJumpMultiplier = 2.0f;
