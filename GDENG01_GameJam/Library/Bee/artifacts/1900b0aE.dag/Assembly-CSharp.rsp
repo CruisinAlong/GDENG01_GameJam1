@@ -402,6 +402,8 @@
 "Assets/Scripts/Broadcasting/EventNames.cs"
 "Assets/Scripts/Broadcasting/ObserverList.cs"
 "Assets/Scripts/Broadcasting/Parameters.cs"
+"Assets/Scripts/Checkpoint.cs"
+"Assets/Scripts/CheckpointManager.cs"
 "Assets/Scripts/FallDamage.cs"
 "Assets/Scripts/LoadManager/LoadManager.cs"
 "Assets/Scripts/LoadManager/SceneNames.cs"
