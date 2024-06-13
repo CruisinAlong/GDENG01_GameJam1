@@ -7,14 +7,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float baseJumpForce = 5f;
     [SerializeField] private float maxJumpForce = 10f;
     [SerializeField] private float maxJumpTime = 3f;
-    [SerializeField] private float speed = 10.0f;
+    [SerializeField] private float speed = 50.0f;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float forwardJumpMultiplier = 2.0f;
 
     private Rigidbody rb;
-    private bool isGrounded;
-    private bool isJumping;
-    private bool jumpKeyHeld;
+    private bool isGrounded =false;
+    private bool isJumping = false;
+    private bool jumpKeyHeld = false;
     private float jumpTimeCounter;
 
     private Vector3 moveDirection = Vector3.zero;
@@ -57,9 +57,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
+            isGrounded = false;
+            isJumping = false;
             jumpKeyHeld = false;
             StartJump();
         }
+
     }
 
     private void StartJump()

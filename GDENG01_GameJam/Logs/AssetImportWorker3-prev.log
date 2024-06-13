@@ -15,7 +15,7 @@ C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54055
+60404
 -job-worker-count
 9
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27132] Host "[IP] 192.168.5.52 [Port] 0 [Flags] 2 [Guid] 1458271128 [EditorId] 1458271128 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [27132] Host "[IP] 192.168.5.52 [Port] 0 [Flags] 2 [Guid] 1458271128 [EditorId] 1458271128 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2780] Host "[IP] 10.200.146.15 [Port] 0 [Flags] 2 [Guid] 253674421 [EditorId] 253674421 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2780] Host "[IP] 10.200.146.15 [Port] 0 [Flags] 2 [Guid] 253674421 [EditorId] 253674421 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 [Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,13 +79,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.008859 seconds.
-- Loaded All Assemblies, in  0.636 seconds
+Registered in 0.010298 seconds.
+- Loaded All Assemblies, in  0.681 seconds
 Native extension for Android target not found
 Android SDK Build-tools component is not found. Make sure all tools are installed in the SDK manager.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
@@ -104,38 +104,38 @@ UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.Us
 UnityEditor.Android.TargetExtension:OnLoad ()
 UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
 
-Android Extension - Scanning For ADB Devices 1576 ms
+Android Extension - Scanning For ADB Devices 469 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.063 seconds
-Domain Reload Profiling: 2696ms
-	BeginReloadAssembly (180ms)
+- Finished resetting the current domain, in  1.104 seconds
+Domain Reload Profiling: 1781ms
+	BeginReloadAssembly (227ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (304ms)
-		LoadAssemblies (182ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (267ms)
+		LoadAssemblies (221ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (297ms)
-			TypeCache.Refresh (295ms)
-				TypeCache.ScanAssembly (268ms)
+		AnalyzeDomain (263ms)
+			TypeCache.Refresh (261ms)
+				TypeCache.ScanAssembly (241ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (2064ms)
+	FinalizeReload (1105ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2016ms)
+		SetupLoadedEditorAssemblies (1007ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1704ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (232ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
+			InitializePlatformSupportModulesInManaged (641ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (267ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,147 +144,269 @@ Domain Reload Profiling: 2696ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.546 seconds
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.446 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.843 seconds
-Domain Reload Profiling: 2381ms
-	BeginReloadAssembly (590ms)
+- Finished resetting the current domain, in  1.086 seconds
+Domain Reload Profiling: 2525ms
+	BeginReloadAssembly (607ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (845ms)
-		LoadAssemblies (672ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (684ms)
+		LoadAssemblies (542ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (276ms)
-			TypeCache.Refresh (230ms)
-				TypeCache.ScanAssembly (207ms)
-			BuildScriptInfoCaches (31ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (843ms)
+		AnalyzeDomain (309ms)
+			TypeCache.Refresh (259ms)
+				TypeCache.ScanAssembly (239ms)
+			BuildScriptInfoCaches (39ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1087ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (572ms)
+		SetupLoadedEditorAssemblies (766ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (43ms)
-			ProcessInitializeOnLoadAttributes (446ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (627ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 49 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3629 unused Assets / (1.4 MB). Loaded Objects now: 4267.
-Memory consumption went from 132.9 MB to 131.5 MB.
-Total: 5.748100 ms (FindLiveObjects: 0.281600 ms CreateObjectMapping: 0.156000 ms MarkObjects: 4.158500 ms  DeleteObjects: 1.151300 ms)
+Unloading 3629 unused Assets / (1.9 MB). Loaded Objects now: 4271.
+Memory consumption went from 135.6 MB to 133.8 MB.
+Total: 9.902300 ms (FindLiveObjects: 0.423300 ms CreateObjectMapping: 0.306000 ms MarkObjects: 7.299900 ms  DeleteObjects: 1.871000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1136860.612201 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/Moon Glare.flare
-  artifactKey: Guid(241af96f1ab544ef09a3a66d01d8c862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/Moon Glare.flare using Guid(241af96f1ab544ef09a3a66d01d8c862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97757ccea1e41919380f6a5558c39371') in 0.0157632 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/MoonGlow.prefab
-  artifactKey: Guid(0f1bb6c00f49e47b4b8c078bd9c1bf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/MoonGlow.prefab using Guid(0f1bb6c00f49e47b4b8c078bd9c1bf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afd3e24b196436a343594962d4d25323') in 0.0201999 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab
-  artifactKey: Guid(a4d020d60b18649af92bb2a05e00d513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab using Guid(a4d020d60b18649af92bb2a05e00d513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de790398e8b14f979bcaceee90ec244d') in 0.1489597 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 162
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx
-  artifactKey: Guid(cca7a715222e33c49b541a5f7de8f6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx using Guid(cca7a715222e33c49b541a5f7de8f6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '868d2759e86751bfb62243cb0f294021') in 0.0504239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/HowToUpResSkies.png
-  artifactKey: Guid(5f86fefc3a6bd4b1998b38ab48808f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/HowToUpResSkies.png using Guid(5f86fefc3a6bd4b1998b38ab48808f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b34b28d6019d2805b30ab69383c6b1df') in 0.0405834 seconds
+  Time since last request: 49537.150591 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat
+  artifactKey: Guid(e625f56663597ef4899f86b588b4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/Billboard.mat using Guid(e625f56663597ef4899f86b588b4d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9448fbcd0febffae0f71993bf856f010') in 0.2876536 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx
-  artifactKey: Guid(3016c1d519731466ebd747543eef9970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx using Guid(3016c1d519731466ebd747543eef9970) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '981167521320a69677c4a8260b897dfe') in 0.0297862 seconds
+  Time since last request: 18.769266 seconds.
+  path: Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetWhite.mat
+  artifactKey: Guid(365a29a7757a91544b92d59a78390495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetWhite.mat using Guid(365a29a7757a91544b92d59a78390495) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c049be3e1339f1b6e3657041fe8f98a1') in 0.2641187 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.953521 seconds.
+  path: Assets/Imported/Allsky/Fantasy/Fantasy Mid 2/AllSky_FantasySky_Mid_2.mat
+  artifactKey: Guid(c04dc6c9a213049b8b5ecf56137a3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Fantasy/Fantasy Mid 2/AllSky_FantasySky_Mid_2.mat using Guid(c04dc6c9a213049b8b5ecf56137a3302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ce254ad78806da52c61e78b48b60244') in 0.1083564 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/SunGlare.psd
-  artifactKey: Guid(0309f746e292a4772b7e81facce34e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/SunGlare.psd using Guid(0309f746e292a4772b7e81facce34e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0280cd2075ccbb422b0d77f708a5f11') in 0.009135 seconds
+  Time since last request: 0.035327 seconds.
+  path: Assets/Imported/Allsky/Overcast/Overcast High/AllSky_Overcast3_High Equirect.mat
+  artifactKey: Guid(11497492e554c4d3e8865a9b413115a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Overcast/Overcast High/AllSky_Overcast3_High Equirect.mat using Guid(11497492e554c4d3e8865a9b413115a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8fe99c1f77ede08d31c4aa555586fb19') in 0.0762251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Imported/Allsky/Space/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat
+  artifactKey: Guid(131aa6d213d394bb7a90a9e0f87922f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Space/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat using Guid(131aa6d213d394bb7a90a9e0f87922f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da69d2fdc9fa0bf220b77703d75d239d') in 0.0504517 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_Logo.png
-  artifactKey: Guid(a5075efb0c5504a389b38cf795aabf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/AllSky_Logo.png using Guid(a5075efb0c5504a389b38cf795aabf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '562f5f3c9a656c67e3be52aa277061eb') in 0.020181 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.548390 seconds.
+  path: Assets/Imported/Allsky/Space/Space_Dark_Starless/AllSky_Space_DarkSpace_Equirect.mat
+  artifactKey: Guid(93c8867abb6bd4ce7a932d22868de52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Space/Space_Dark_Starless/AllSky_Space_DarkSpace_Equirect.mat using Guid(93c8867abb6bd4ce7a932d22868de52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9a5af300c10c9cd2b2517b1928af974') in 0.0609369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/Sun Glare.flare
-  artifactKey: Guid(436034cf81451448691149d6bc008327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/Sun Glare.flare using Guid(436034cf81451448691149d6bc008327) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e287f8925e04160b02cd458e17593995') in 0.0013024 seconds
+  Time since last request: 0.043238 seconds.
+  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat
+  artifactKey: Guid(174e7977166824bf49a2c2f4b54fd066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat using Guid(174e7977166824bf49a2c2f4b54fd066) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1660cb8d6a173a632e8c085892848d21') in 0.025097 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/BlackTransparentGradient.png
-  artifactKey: Guid(5fcdc8d88900447cbacc2451e4e54427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/BlackTransparentGradient.png using Guid(5fcdc8d88900447cbacc2451e4e54427) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '355e1894eb7f1773ad3b044441eb67de') in 0.0184202 seconds
+  Time since last request: 0.689392 seconds.
+  path: Assets/Imported/Allsky/HDRIHaven/Blouberg Sunrise 2/blouberg_sunrise_Equirect.mat
+  artifactKey: Guid(d6621e83f25cc4caf837731da6b6ae29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/HDRIHaven/Blouberg Sunrise 2/blouberg_sunrise_Equirect.mat using Guid(d6621e83f25cc4caf837731da6b6ae29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b716dacb2909c965f0f57e6ce21a5a1b') in 0.0784186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Imported/Allsky/HDRIHaven/Blue Lagoon/blue_Lagoon_16k Equirect.mat
+  artifactKey: Guid(05146d45c19a44880a8c1236198fa5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/HDRIHaven/Blue Lagoon/blue_Lagoon_16k Equirect.mat using Guid(05146d45c19a44880a8c1236198fa5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee454d94a5c1c445836ddb6c2993b569') in 0.06717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat
+  artifactKey: Guid(b0d5705176a0d36419d034e2ea46491a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Broadleaf/Broadleaf_Desktop Materials/LOD2/Branches_0.mat using Guid(b0d5705176a0d36419d034e2ea46491a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0d9fa062a8ccf482b60537d1ceb4de0') in 0.1132706 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/SunGlow.prefab
-  artifactKey: Guid(6e58b6f7d760a4942b5d1887cdb4a815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/SunGlow.prefab using Guid(6e58b6f7d760a4942b5d1887cdb4a815) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9581c10ce7b5ee1eaed0a3b35c294b50') in 0.001693 seconds
+  Time since last request: 0.024382 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat
+  artifactKey: Guid(39baceec69bb1ee4fb4194d50e1a6d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Palm/Palm_Desktop Materials/LOD0/Branches_0.mat using Guid(39baceec69bb1ee4fb4194d50e1a6d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4d74865a339fb38a7589b8ce72af8ee') in 0.1847353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat
+  artifactKey: Guid(fecc9f713338e4943a8c38775af8c046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD1/Branches_1.mat using Guid(fecc9f713338e4943a8c38775af8c046) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4eb1896068ddb4afce3d1b78cfb2e953') in 0.0299986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat
+  artifactKey: Guid(fdb77c3917027234db7a7792019eda2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop Materials/LOD0/Branches_1.mat using Guid(fdb77c3917027234db7a7792019eda2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cebf84c490a3fce7ebdbab354a3c54a5') in 0.023043 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Brick/Brick 4.mat
+  artifactKey: Guid(9b4b468821eecaa4dbd02867f39ffb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Brick/Brick 4.mat using Guid(9b4b468821eecaa4dbd02867f39ffb82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b13eeb7f1fb678b9361d3842e4bd76e7') in 0.0820864 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Imported/Allsky/AllSkyDemoEnvironment/AdditiveSprite.mat
-  artifactKey: Guid(aa556f6275fc744de969c712a17350e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/Allsky/AllSkyDemoEnvironment/AdditiveSprite.mat using Guid(aa556f6275fc744de969c712a17350e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ce7371d831c67d418fe671848c98c18') in 0.027992 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000027 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Brick/Brick 7b.mat
+  artifactKey: Guid(d0fab386a8dd61c4082a4b0e6854e791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Brick/Brick 7b.mat using Guid(d0fab386a8dd61c4082a4b0e6854e791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12c6963c41d575411bb0832b18fd8994') in 0.0991755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Brick/Brick 9.mat
+  artifactKey: Guid(fb25d135304ae554887d0257822703a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Brick/Brick 9.mat using Guid(fb25d135304ae554887d0257822703a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7a254253cd1ccf4995d07a0ae6d64da') in 0.0720685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.188060 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Carpet/Carpet 2.mat
+  artifactKey: Guid(014db8aedb78a3b4a8cac83bd8cb6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Carpet/Carpet 2.mat using Guid(014db8aedb78a3b4a8cac83bd8cb6c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d84e987c07d862d9a68cd6d5f4d3b7d') in 0.0996067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071233 seconds.
+  path: Assets/Imported/Allsky/Cartoon/Cartoon Base Twilight/Cartoon Base Twilight Equirect.mat
+  artifactKey: Guid(740baf646217741a89e0d9ec12eff76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Cartoon/Cartoon Base Twilight/Cartoon Base Twilight Equirect.mat using Guid(740baf646217741a89e0d9ec12eff76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8b10053142310a941ebcff1bfc496cc') in 0.0640219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Imported/Allsky/Cartoon/Cartoon Airbrush Day NoSun/Cartoon_Airbrush_Day_NoSun Equirect.mat
+  artifactKey: Guid(72622184ad37a4f2897427d4aa83205d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Allsky/Cartoon/Cartoon Airbrush Day NoSun/Cartoon_Airbrush_Day_NoSun Equirect.mat using Guid(72622184ad37a4f2897427d4aa83205d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8d3284fe86210a120825441016e5929') in 0.0529003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.324417 seconds.
+  path: Assets/Tree 1_Textures/translucency_gloss.png
+  artifactKey: Guid(d3b7c8901e4a71441985461fbae65dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree 1_Textures/translucency_gloss.png using Guid(d3b7c8901e4a71441985461fbae65dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0acac82e9256eccfaf811808f038982') in 0.059435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.182513 seconds.
+  path: Assets/Tree 2_Textures/translucency_gloss.png
+  artifactKey: Guid(941b94d7a4550964d8bead0b82f547cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree 2_Textures/translucency_gloss.png using Guid(941b94d7a4550964d8bead0b82f547cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e78357c13f4f6f3e6e2249fa2583329') in 0.0353765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.327898 seconds.
+  path: Assets/Tree_Textures/translucency_gloss.png
+  artifactKey: Guid(10f7a1006bb8a14429f5adbbb87d6719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree_Textures/translucency_gloss.png using Guid(10f7a1006bb8a14429f5adbbb87d6719) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5cf3b873253bfbf93687f3b15acf2fc') in 0.0181109 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.487718 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga
+  artifactKey: Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Desktop_Atlas_Billboards_Normal.tga using Guid(6c2afc8a038f69f4aa35c25dcd94fd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ebe68f34129da43eb2cfe7e7d2d410e') in 0.0601949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga
+  artifactKey: Guid(2b46b029d8dc37049aebb484e79998ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/ConiferBark_Normal.tga using Guid(2b46b029d8dc37049aebb484e79998ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82cc414ce4074b0d45ab03108467560c') in 0.0410992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg
+  artifactKey: Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg using Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf7f4a266a48dfacb150ef9e72a8dad8') in 0.0403083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000569 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer
+  artifactKey: Guid(73ab447d8034be44f8321c730cc6247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer using Guid(73ab447d8034be44f8321c730cc6247a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '562d58e39af7fefa8225bcafc4bd3754') in 0.0014435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga
+  artifactKey: Guid(34d2758af9e0a2b4690fbcfcad0285d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Conifer_Needles_Desktop.tga using Guid(34d2758af9e0a2b4690fbcfcad0285d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12b0dc3d8194183cb8fb7bb15f142b96') in 0.036463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
