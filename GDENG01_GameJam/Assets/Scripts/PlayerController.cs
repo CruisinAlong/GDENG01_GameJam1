@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float chargedJumpMultiplier = 1.5f;
     [SerializeField] public float speed = 10.0f;
     [SerializeField] private Camera playerCamera;
-    [SerializeField] private CharacterController controller;
     [SerializeField] public float turnSmoothTime = 0.1f;
     [SerializeField] public float forwardJumpMultiplier = 2.0f;
     [SerializeField] public float climbSpeed = 5.0f;
@@ -20,9 +19,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Slider healthSlider; 
     [SerializeField] private float maxHealth = 100f; 
     [SerializeField] private float fallDamageThreshold = 10f;
+    [SerializeField] private Rigidbody rb;
 
     private Animator animator;
-    private Rigidbody rb;
     private float turnSmoothVelocity;
     private bool isGrounded =false;
     private bool isJumping = false;
@@ -65,6 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("grounded");
             isGrounded = true;
             isJumping = false;
 
@@ -99,13 +99,13 @@ public class PlayerController : MonoBehaviour
 
     private void InputListener()
     {
-        if (controller.isGrounded)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) && !isClimbing)
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isClimbing)
             {
+                animator.SetBool("IsMoving", false);
                 jumpKeyHeld = true;
                 isJumping = true;
                 jumpTimeCounter = 0f;
+                Debug.Log("Jump");
             }
             else if (Input.GetKey(KeyCode.Space) && isJumping)
             {
@@ -117,12 +117,9 @@ public class PlayerController : MonoBehaviour
                 isGrounded = false;
                 isJumping = false;
                 jumpKeyHeld = false;
-                isGrounded = false;
-                isJumping = false;
-
+                
                 StartJump();
             }
-        }
     }
 
     private void StartJump()
@@ -145,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 jumpDirection = forwardDirection * forwardJumpMultiplier * (jumpForce / maxJumpForce) + Vector3.up * jumpForce;
 
-        controller.Move(jumpDirection * Time.deltaTime);
+        rb.velocity = new Vector3(jumpDirection.x, jumpDirection.y, jumpDirection.z);
         jumpForceSlider.value = baseJumpForce;
     }
 
@@ -173,7 +170,9 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+
+            rb.velocity = moveDirection * speed * Time.deltaTime;
+          
             animator.SetBool("IsMoving", true);
         }
         else
