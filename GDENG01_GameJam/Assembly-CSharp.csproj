@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ViewHandler\Popups\NotificationDialog.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\View.cs" />
+    <Compile Include="Assets\Scripts\EndGame.cs" />
     <Compile Include="Assets\Scripts\LoadManager\LoadManager.cs" />
     <Compile Include="Assets\Scripts\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Views\BasicHudScreen.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Broadcasting\Parameters.cs" />
     <Compile Include="Assets\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\Broadcasting\ObserverList.cs" />
+    <Compile Include="Assets\Scripts\Game End Screen.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\NullScreen.cs" />
     <Compile Include="Assets\Scripts\FallDamage.cs" />
   </ItemGroup>
