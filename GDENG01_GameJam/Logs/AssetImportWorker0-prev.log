@@ -1,16 +1,25 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.20f1 (0e25a174756c) revision 927137'; Using compiler version '193431935'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32492 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\UnityInstall\2023.2.20f1\Editor\Unity.exe
+=======
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15775 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Unity.exe
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
 -logFile
 Logs/AssetImportWorker0.log
@@ -18,12 +27,26 @@ Logs/AssetImportWorker0.log
 61118
 -job-worker-count
 9
+=======
+C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63100
+-job-worker-count
+7
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
+<<<<<<< HEAD
 Successfully changed project path to: C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
 C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
+=======
+Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
+C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,6 +81,7 @@ C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [17700] Host "[IP] 10.200.146.15 [Port] 0 [Flags] 2 [Guid] 3754989111 [EditorId] 3754989111 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 Player connection [17700] Host "[IP] 10.200.146.15 [Port] 0 [Flags] 2 [Guid] 3754989111 [EditorId] 3754989111 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
@@ -93,11 +117,49 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.694 seconds
 Domain Reload Profiling: 1098ms
 	BeginReloadAssembly (134ms)
+=======
+Player connection [27600] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 3435792017 [EditorId] 3435792017 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27600] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 3435792017 [EditorId] 3435792017 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.20f1 (0e25a174756c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3991 MB
+    Driver:   30.0.15.1169
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.004932 seconds.
+- Loaded All Assemblies, in  0.456 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 287 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.689 seconds
+Domain Reload Profiling: 1142ms
+	BeginReloadAssembly (149ms)
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (53ms)
@@ -119,6 +181,29 @@ Domain Reload Profiling: 1098ms
 			BeforeProcessingInitializeOnLoad (7ms)
 			ProcessInitializeOnLoadAttributes (194ms)
 			ProcessInitializeOnLoadMethodAttributes (65ms)
+=======
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (146ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (168ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (689ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (638ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (406ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -127,6 +212,7 @@ Domain Reload Profiling: 1098ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  1.651 seconds
@@ -7941,10 +8027,23 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.012 seconds
 Domain Reload Profiling: 9150ms
 	BeginReloadAssembly (312ms)
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.079 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.586 seconds
+Domain Reload Profiling: 1661ms
+	BeginReloadAssembly (455ms)
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 		CreateAndSetChildDomain (73ms)
 	RebuildCommonClasses (57ms)
 	RebuildNativeTypeToScriptingClass (21ms)
@@ -64405,3 +64504,91 @@ Memory consumption went from 220.8 MB to 218.5 MB.
 Total: 13.311500 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.252800 ms MarkObjects: 7.907100 ms  DeleteObjects: 4.779600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (517ms)
+		LoadAssemblies (461ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (196ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (586ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (406ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (318ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3799 unused Assets / (2.0 MB). Loaded Objects now: 4452.
+Memory consumption went from 138.8 MB to 136.8 MB.
+Total: 20.455800 ms (FindLiveObjects: 1.817600 ms CreateObjectMapping: 1.346400 ms MarkObjects: 13.693300 ms  DeleteObjects: 3.595800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 146878.277440 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c7f2e2e17a3ebdcac44bda580781b46') in 0.1123646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Standard Assets/Fonts/OpenSans/OpenSansRegular.ttf
+  artifactKey: Guid(b51a3e520f9164da198dc59c8acfccd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Fonts/OpenSans/OpenSansRegular.ttf using Guid(b51a3e520f9164da198dc59c8acfccd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f711c32f1a10a2a230696cbea3217f98') in 0.0125971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Standard Assets/Fonts/OpenSans/OpenSansLight.ttf
+  artifactKey: Guid(04a842e316b6f44bf8da702de26a8ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Fonts/OpenSans/OpenSansLight.ttf using Guid(04a842e316b6f44bf8da702de26a8ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5c7043cc311c172455e7a9f4e914925') in 0.0100299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.494108 seconds.
+  path: Assets/NewLayer 1.terrainlayer
+  artifactKey: Guid(9d6e368fa74e9f1468ab8088291d1f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer 1.terrainlayer using Guid(9d6e368fa74e9f1468ab8088291d1f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19a3a89a8722ae9b4334a6bd33549e0f') in 0.0299409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/NewLayer 4.terrainlayer
+  artifactKey: Guid(40d792f407e3db4428d764a5a903373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer 4.terrainlayer using Guid(40d792f407e3db4428d764a5a903373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34df5734366cff4c95b95525f5be3af2') in 0.0203779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tree 2.prefab
+  artifactKey: Guid(5ba85d8e6862b16469b453e78582f652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree 2.prefab using Guid(5ba85d8e6862b16469b453e78582f652) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44febcb88c5d6b59358401df363753ad') in 0.1159686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> 0c859462d1887b8046608eae398bffdab52d9839

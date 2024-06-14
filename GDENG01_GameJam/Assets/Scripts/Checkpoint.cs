@@ -8,7 +8,7 @@ public class Checkpoint : MonoBehaviour
 
     void Start()
     {
-        checkpointManager = FindObjectOfType<CheckpointManager>();
+        checkpointManager = FindAnyObjectByType<CheckpointManager>();
     }
 
     void OnTriggerEnter(Collider other)
