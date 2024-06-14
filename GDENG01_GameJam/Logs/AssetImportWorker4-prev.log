@@ -1,29 +1,29 @@
 Using pre-set license
 Built from '2023.2/staging' branch; Version is '2023.2.20f1 (0e25a174756c) revision 927137'; Using compiler version '193431935'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15775 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32492 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2023.2.20f1\Editor\Unity.exe
+C:\Program Files\UnityInstall\2023.2.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker4
 -projectPath
-C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
+C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-63100
+62716
 -job-worker-count
-7
+9
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
-C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam
+Successfully changed project path to: C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
+C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,67 +58,67 @@ C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_Game
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8644] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 4069255291 [EditorId] 4069255291 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [8644] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 4069255291 [EditorId] 4069255291 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 7
-[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Player connection [34736] Host "[IP] 192.168.5.52 [Port] 0 [Flags] 2 [Guid] 1380796138 [EditorId] 1380796138 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [34736] Host "[IP] 192.168.5.52 [Port] 0 [Flags] 2 [Guid] 1380796138 [EditorId] 1380796138 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HEIBFVLB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 157.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_GameJam/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Mathieu Marc Pobre/Documents/GitHub/GDENG01_GameJam1/GDENG01_GameJam/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
     Vendor:   NVIDIA
-    VRAM:     3991 MB
-    Driver:   30.0.15.1169
+    VRAM:     7971 MB
+    Driver:   31.0.15.3770
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Mono path[0] = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004319 seconds.
-- Loaded All Assemblies, in  0.423 seconds
+Register platform support module: C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/UnityInstall/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.008508 seconds.
+- Loaded All Assemblies, in  1.627 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 246 ms
+Android Extension - Scanning For ADB Devices 740 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.623 seconds
-Domain Reload Profiling: 1044ms
-	BeginReloadAssembly (136ms)
+- Finished resetting the current domain, in  1.341 seconds
+Domain Reload Profiling: 2963ms
+	BeginReloadAssembly (212ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (183ms)
-		LoadAssemblies (134ms)
+	RebuildCommonClasses (399ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (912ms)
+		LoadAssemblies (206ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (178ms)
-				TypeCache.ScanAssembly (163ms)
+		AnalyzeDomain (908ms)
+			TypeCache.Refresh (905ms)
+				TypeCache.ScanAssembly (883ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (624ms)
+	FinalizeReload (1342ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (565ms)
+		SetupLoadedEditorAssemblies (1265ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (357ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (149ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
+			InitializePlatformSupportModulesInManaged (913ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -127,53 +127,451 @@ Domain Reload Profiling: 1044ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.981 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.177 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.711 seconds
-Domain Reload Profiling: 1688ms
-	BeginReloadAssembly (366ms)
+- Finished resetting the current domain, in  1.028 seconds
+Domain Reload Profiling: 3197ms
+	BeginReloadAssembly (928ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (523ms)
-		LoadAssemblies (409ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (1050ms)
+		LoadAssemblies (601ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (221ms)
-			TypeCache.Refresh (185ms)
-				TypeCache.ScanAssembly (164ms)
-			BuildScriptInfoCaches (27ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (712ms)
+		AnalyzeDomain (616ms)
+			TypeCache.Refresh (567ms)
+				TypeCache.ScanAssembly (447ms)
+			BuildScriptInfoCaches (38ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1029ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (484ms)
+		SetupLoadedEditorAssemblies (710ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (565ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3799 unused Assets / (1.9 MB). Loaded Objects now: 4452.
+Memory consumption went from 139.4 MB to 137.5 MB.
+Total: 8.518500 ms (FindLiveObjects: 0.384300 ms CreateObjectMapping: 0.232800 ms MarkObjects: 6.222600 ms  DeleteObjects: 1.677500 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.194 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.220 seconds
+Domain Reload Profiling: 2408ms
+	BeginReloadAssembly (336ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (707ms)
+		LoadAssemblies (654ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (249ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (221ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1221ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (806ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (564ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3797 unused Assets / (1.4 MB). Loaded Objects now: 4452.
+Memory consumption went from 127.0 MB to 125.6 MB.
+Total: 10.944500 ms (FindLiveObjects: 0.414700 ms CreateObjectMapping: 0.378900 ms MarkObjects: 8.504000 ms  DeleteObjects: 1.645100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 89292.600810 seconds.
+  path: Assets/Prefabs/Lantern 1.prefab
+  artifactKey: Guid(2d433fea5cb5b104ab06de3d925bf0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Lantern 1.prefab using Guid(2d433fea5cb5b104ab06de3d925bf0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04d180e2b3a77bd775bbde4a0ab098e7') in 0.2495939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 148
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.770271 seconds.
+  path: Assets/Prefabs/Lantern 2.prefab
+  artifactKey: Guid(f20117f92135e2843ae0c338ce1f5acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Lantern 2.prefab using Guid(f20117f92135e2843ae0c338ce1f5acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e10f324daae5ca0a4ae86927697652bc') in 0.0819777 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 108
+
+========================================================================
+Received Import Request.
+  Time since last request: 431.457984 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood
+  artifactKey: Guid(8150434c28545954b9f24cf9dd9c2486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood using Guid(8150434c28545954b9f24cf9dd9c2486) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd62f834733deec0922e326a25dd14905') in 0.0065408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083860 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Wood 1.mat
+  artifactKey: Guid(bc1619608c953654a87973b4db5d5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Wood 1.mat using Guid(bc1619608c953654a87973b4db5d5468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '392a354cb843cdaf4016876f1457daac') in 0.1504572 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Wood 3.mat
+  artifactKey: Guid(40d9928ad2caf494ba8892f22e5b10fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Wood 3.mat using Guid(40d9928ad2caf494ba8892f22e5b10fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5d2fa804b17d145133bf54994bc38c7') in 0.1066436 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.868232 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Textures
+  artifactKey: Guid(4dccb750d320a52429bc67b110608b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Textures using Guid(4dccb750d320a52429bc67b110608b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e35604b0b99a8b3269b306e9d0b01bf9') in 0.0032026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053212 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 1.png
+  artifactKey: Guid(ba83bdee349b4b248a405e5fa02eebcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 1.png using Guid(ba83bdee349b4b248a405e5fa02eebcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd13b021b6cc463c3e0a59840f5923d76') in 0.0999039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001821 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 3.png
+  artifactKey: Guid(d54c55a31ea0c124faccc39486de3033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 3.png using Guid(d54c55a31ea0c124faccc39486de3033) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '733c03439a5216e0ed4fd7f1525eb0e4') in 0.0457802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 3 bump.png
+  artifactKey: Guid(61325f4e6534f184a9ac91e0ce4c3629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wood/Textures/Wood 3 bump.png using Guid(61325f4e6534f184a9ac91e0ce4c3629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04a48b93e0256283137d196cfee7779a') in 0.0605771 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.756025 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Paint/Paint 1.mat
+  artifactKey: Guid(fcf39a428c6cbfb48b1aca53c52bb11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Paint/Paint 1.mat using Guid(fcf39a428c6cbfb48b1aca53c52bb11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51fe314856996b0ebdd4f1d8093e2696') in 0.1399152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.270384 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 1.mat
+  artifactKey: Guid(46f09d1ee0756704980ca0b4dfecb35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 1.mat using Guid(46f09d1ee0756704980ca0b4dfecb35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa8f5e7f1f357a2c5194922d41645991') in 0.0969034 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 3.mat
+  artifactKey: Guid(ff0be7b3d8cb38141942f10ebe7e172d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 3.mat using Guid(ff0be7b3d8cb38141942f10ebe7e172d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9185f94f70fd26b9db63662e8894daf0') in 0.112304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 6.mat
+  artifactKey: Guid(2908e220fcdeedb40a8ab7ac424dfc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Rocks/Rocks 6.mat using Guid(2908e220fcdeedb40a8ab7ac424dfc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d678d9aadcc0fd0bc96cf38629f55db') in 0.1506547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.182328 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Shingles/Shingles 1.mat
+  artifactKey: Guid(b0be9b80f8c2eec4e94ead847004b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Shingles/Shingles 1.mat using Guid(b0be9b80f8c2eec4e94ead847004b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da617bcfa0a4eb8bbd511be7f516a330') in 0.1052369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Shingles/Shingles 2b.mat
+  artifactKey: Guid(f8dc4c17537f92149ae681a6bd9e8925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Shingles/Shingles 2b.mat using Guid(f8dc4c17537f92149ae681a6bd9e8925) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b0a27c90ee5af91b301b18a4c890e01') in 0.0800663 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.416541 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Snow/Snow 1.mat
+  artifactKey: Guid(f1d1fdaaeee434b4daeec62d1d2dc7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Snow/Snow 1.mat using Guid(f1d1fdaaeee434b4daeec62d1d2dc7e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98b3021fc2a6f62a6470fb339c16d664') in 0.0800038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.780580 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Stone/Stone 1.mat
+  artifactKey: Guid(2699dc05ec9bcec41bb57f10f6b90cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Stone/Stone 1.mat using Guid(2699dc05ec9bcec41bb57f10f6b90cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '768a855dbd1cc3e96c5fccea1667cf4b') in 0.0906353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Stone/Stone 3.mat
+  artifactKey: Guid(2e2f8ac2d57e5344197f19949b3bc72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Stone/Stone 3.mat using Guid(2e2f8ac2d57e5344197f19949b3bc72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7850b54af1b5f72a4f30025586b024ad') in 0.1075997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.572609 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Tiles/Tile 1.mat
+  artifactKey: Guid(ebf2c0c962bbc26409c12fc4c6b00b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Tiles/Tile 1.mat using Guid(ebf2c0c962bbc26409c12fc4c6b00b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a2a30a9e644b8ea5ecf7e80735dea22') in 0.1065138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Tiles/Tile 4.mat
+  artifactKey: Guid(b59e8b77aafe92a46b45ceb819fe72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Tiles/Tile 4.mat using Guid(b59e8b77aafe92a46b45ceb819fe72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f856d8788297367de79a0f963a337a4') in 0.100978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.062309 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Grass/Grass 1.mat
+  artifactKey: Guid(650f2cedbe2840945814ce7cb8f34f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Grass/Grass 1.mat using Guid(650f2cedbe2840945814ce7cb8f34f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cf05018a1e7ed86e66df66cc6a320fd') in 0.0876275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Grass/Grass 5.mat
+  artifactKey: Guid(b536d4fa585c0844b8377bf434205971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Grass/Grass 5.mat using Guid(b536d4fa585c0844b8377bf434205971) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e119005900c32b4f8aae3c283647264') in 0.1664944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Grass/Grass 4.mat
+  artifactKey: Guid(672101889d5c3ce439f989cf5f5ba6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Grass/Grass 4.mat using Guid(672101889d5c3ce439f989cf5f5ba6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18be3d3732c0bacca6292e3c3ee4d273') in 0.122242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.304051 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Leaves/Leaves 1.mat
+  artifactKey: Guid(bfc11e985ab9f874aafce326c3d6463d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Leaves/Leaves 1.mat using Guid(bfc11e985ab9f874aafce326c3d6463d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c24b3f5aea54da28a3565488676eabf4') in 0.1060731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.247370 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 1.mat
+  artifactKey: Guid(d3f56289d53da0747863e6419f9e0a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 1.mat using Guid(d3f56289d53da0747863e6419f9e0a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '896c74fda82a3e8242b1251fb0bb5dc4') in 0.1003824 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 4.mat
+  artifactKey: Guid(f6a491ce85fdc0346ba4b0622b575432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 4.mat using Guid(f6a491ce85fdc0346ba4b0622b575432) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f98931255b02d4704003f82133f56bfc') in 0.1841547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 6.mat
+  artifactKey: Guid(3fb17cf3fbc88f946bf337d7b79d7721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Wooden Boards/Wooden Boards 6.mat using Guid(3fb17cf3fbc88f946bf337d7b79d7721) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08b717f445dc88f4eea9c190dbcb84bc') in 0.0959897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.954169 seconds.
+  path: Assets/Sprites/Bar.png
+  artifactKey: Guid(c8bbd02a88c2bbc41b7d7e50ec7b2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bar.png using Guid(c8bbd02a88c2bbc41b7d7e50ec7b2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd076a8e87910118e0c8c4d9fe4ded2f') in 0.13252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Sprites/vecteezy_decoration-circle-frame_1191684-removebg-preview.png
+  artifactKey: Guid(eac24478194590e48894f2ee00d5885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/vecteezy_decoration-circle-frame_1191684-removebg-preview.png using Guid(eac24478194590e48894f2ee00d5885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '962ad27c613981031e4ab64cc45d362b') in 0.0664605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.833283 seconds.
+  path: Assets/Terrain/Terrain_0_0_ea17ff57-74b1-41ae-9cc5-885b4b576d0d.asset
+  artifactKey: Guid(6ae8983641586774992525c0b2e9cf04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/Terrain_0_0_ea17ff57-74b1-41ae-9cc5-885b4b576d0d.asset using Guid(6ae8983641586774992525c0b2e9cf04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21c0353e9e49e45c450d064965c2622f') in 0.1396684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 1169.664547 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Rocks
+  artifactKey: Guid(189f253fea42b054886ddefc8850638e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Rocks using Guid(189f253fea42b054886ddefc8850638e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81cfb55adb8cb7b63e5c9df64cce631e') in 0.0024638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.921978 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Glass
+  artifactKey: Guid(a6a5276a2e921474da8bd0d246ead38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Glass using Guid(a6a5276a2e921474da8bd0d246ead38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e8abd9d25e2471709b2f16e5446224e') in 0.00113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Mathieu Marc Pobre\Documents\GitHub\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.688 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.642 seconds
+Domain Reload Profiling: 1327ms
+	BeginReloadAssembly (197ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (407ms)
+		LoadAssemblies (378ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (139ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (124ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (643ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (426ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (376ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (319ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3799 unused Assets / (1.8 MB). Loaded Objects now: 4452.
-Memory consumption went from 138.7 MB to 136.8 MB.
-Total: 8.397300 ms (FindLiveObjects: 0.481800 ms CreateObjectMapping: 0.961400 ms MarkObjects: 5.446300 ms  DeleteObjects: 1.506800 ms)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3797 unused Assets / (1.2 MB). Loaded Objects now: 4504.
+Memory consumption went from 130.4 MB to 129.3 MB.
+Total: 6.213900 ms (FindLiveObjects: 0.346400 ms CreateObjectMapping: 0.476600 ms MarkObjects: 4.201600 ms  DeleteObjects: 1.187500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 768.677083 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Bark
+  artifactKey: Guid(2027090decc727143a17ce9f12c3cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Bark using Guid(2027090decc727143a17ce9f12c3cdec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff1606fee6f39bee81ec0fb088a9df2c') in 0.0107151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.553478 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 1.mat
+  artifactKey: Guid(cb64d13ab02b3054e883327f7e8a29ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 1.mat using Guid(cb64d13ab02b3054e883327f7e8a29ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '804c6baaf2b00494c9797cfad323a36a') in 0.1328872 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 5.mat
+  artifactKey: Guid(e98f7032f5078884f804a99f39beb57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 5.mat using Guid(e98f7032f5078884f804a99f39beb57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f6fe163523cf0223d9605839ff8e54b') in 0.0624303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 3.mat
+  artifactKey: Guid(01defa9ac4f73d5409cd3d2febe6f0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 3.mat using Guid(01defa9ac4f73d5409cd3d2febe6f0ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d85499c38d91c25e24b4aa43372aca9') in 0.0470775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 4.mat
+  artifactKey: Guid(d8a7e0162f9bd1a469cb79c1e51f6c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/PBS Materials Variety Pack/Dirt/Dirt 4.mat using Guid(d8a7e0162f9bd1a469cb79c1e51f6c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b620d012c93e4bdc84a77fc7558f74c6') in 0.0820626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

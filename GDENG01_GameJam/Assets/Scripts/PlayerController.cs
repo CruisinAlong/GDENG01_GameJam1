@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float maxJumpForce = 10f;
     [SerializeField] public float maxJumpTime = 7f;
     [SerializeField] public float chargedJumpMultiplier = 15f;
-    [SerializeField] public float speed = 10.0f;
+    [SerializeField] public float speed = 1.0f;
     [SerializeField] private Camera playerCamera;
     [SerializeField] public float turnSmoothTime = 0.1f;
     [SerializeField] public float forwardJumpMultiplier = 35.0f;
@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float fallDamageThreshold = 10f;
-    [SerializeField] private Transform lookAt;
 
     private Animator animator;
     private Rigidbody rb;
@@ -55,7 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             this.Climb();
         }
-        else if (!jumpKeyHeld)
+        else if (!jumpKeyHeld && isGrounded)
         {
             this.Move();
         }
@@ -182,14 +181,12 @@ public class PlayerController : MonoBehaviour
 
         if (direction.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + lookAt.eulerAngles.y;
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.transform.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
-            rb.velocity = new Vector3(moveDirection.x * speed, rb.velocity.y, moveDirection.z * speed);
-
+            rb.velocity = moveDirection.normalized * speed;
             animator.SetBool("IsMoving", true);
 
             Debug.Log("Moving. Direction: " + direction + " Target angle: " + targetAngle + " Move direction: " + moveDirection);
