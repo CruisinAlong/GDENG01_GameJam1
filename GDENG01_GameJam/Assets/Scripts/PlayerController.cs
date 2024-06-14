@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Add this line to use the UI components
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] public float baseJumpForce = 5f;
     [SerializeField] public float maxJumpForce = 10f;
-    [SerializeField] public float maxJumpTime = 3f;
-    [SerializeField] public float chargedJumpMultiplier = 1.5f;
+    [SerializeField] public float maxJumpTime = 7f;
+    [SerializeField] public float chargedJumpMultiplier = 15f;
     [SerializeField] public float speed = 10.0f;
     [SerializeField] private Camera playerCamera;
     [SerializeField] public float turnSmoothTime = 0.1f;
-    [SerializeField] public float forwardJumpMultiplier = 2.0f;
+    [SerializeField] public float forwardJumpMultiplier = 35.0f;
     [SerializeField] public float climbSpeed = 5.0f;
     [SerializeField] private string climbableTag = "Climbable";
     [SerializeField] private Slider jumpForceSlider;
     [SerializeField] private Slider healthSlider;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float fallDamageThreshold = 10f;
+    [SerializeField] private Transform lookAt;
 
     private Animator animator;
     private Rigidbody rb;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
         jumpForceSlider.minValue = baseJumpForce;
         jumpForceSlider.maxValue = maxJumpForce * chargedJumpMultiplier;
         jumpForceSlider.value = baseJumpForce;
@@ -48,7 +50,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Update called");
         this.InputListener();
         if (isClimbing)
         {
@@ -73,6 +74,15 @@ public class PlayerController : MonoBehaviour
             {
                 TakeDamage(Mathf.Abs(rb.velocity.y));
             }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+            Debug.Log("Left Ground. isGrounded: " + isGrounded);
         }
     }
 
@@ -101,34 +111,27 @@ public class PlayerController : MonoBehaviour
 
     private void InputListener()
     {
-        if (controller.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && !isClimbing && isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !isClimbing)
-            {
-                jumpKeyHeld = true;
-                isJumping = true;
-                jumpTimeCounter = 0f;
-                Debug.Log("Space key down. Jump started.");
-            }
-            else if (Input.GetKey(KeyCode.Space) && isJumping)
-            {
-                jumpTimeCounter += Time.deltaTime;
-                UpdateJumpForceSlider();
-                Debug.Log("Space key held. Jump time counter: " + jumpTimeCounter);
-            }
-            else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
-            {
-                isGrounded = false;
-                isJumping = false;
-                jumpKeyHeld = false;
-
-                StartJump();
-                Debug.Log("Space key up. Jump executed.");
-            }
+            jumpKeyHeld = true;
+            isJumping = true;
+            jumpTimeCounter = 0f;
+            Debug.Log("Space key down. Jump started.");
         }
-        else
+        else if (Input.GetKey(KeyCode.Space) && isJumping)
         {
-            Debug.Log("Player is not grounded.");
+            jumpTimeCounter += Time.deltaTime;
+            UpdateJumpForceSlider();
+            Debug.Log("Space key held. Jump time counter: " + jumpTimeCounter);
+        }
+        else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
+        {
+            isGrounded = false;
+            isJumping = false;
+            jumpKeyHeld = false;
+
+            StartJump();
+            Debug.Log("Space key up. Jump executed.");
         }
     }
 
@@ -146,13 +149,13 @@ public class PlayerController : MonoBehaviour
             jumpForce = Mathf.Lerp(baseJumpForce, maxJumpForce, clampedJumpTime / maxJumpTime);
         }
 
-        Vector3 forwardDirection = transform.forward;
+        Vector3 forwardDirection = playerCamera.transform.forward;
         forwardDirection.y = 0;
         forwardDirection.Normalize();
 
         Vector3 jumpDirection = forwardDirection * forwardJumpMultiplier * (jumpForce / maxJumpForce) + Vector3.up * jumpForce;
-        rb.AddForce(jumpDirection, ForceMode.VelocityChange);
-        //rb.velocity = jumpDirection;
+        rb.velocity = jumpDirection;
+
         jumpForceSlider.value = baseJumpForce;
 
         Debug.Log("Jump direction: " + jumpDirection + " Jump force: " + jumpForce);
@@ -179,24 +182,21 @@ public class PlayerController : MonoBehaviour
 
         if (direction.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.transform.eulerAngles.y;
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + lookAt.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            moveDirection.y += Physics.gravity.y * 10f;
 
-            rb.velocity = moveDirection * speed * Time.deltaTime;
-          
+            rb.velocity = new Vector3(moveDirection.x * speed, rb.velocity.y, moveDirection.z * speed);
+
             animator.SetBool("IsMoving", true);
 
-            Debug.Log("Moving. Direction: " + direction + " Target angle: " + targetAngle);
+            Debug.Log("Moving. Direction: " + direction + " Target angle: " + targetAngle + " Move direction: " + moveDirection);
         }
-
         else
         {
             animator.SetBool("IsMoving", false);
-            Debug.Log("Stopped moving.");
         }
     }
 
@@ -206,7 +206,7 @@ public class PlayerController : MonoBehaviour
         Vector3 climbDirection = new Vector3(0, verticalInput * climbSpeed * Time.deltaTime, 0);
         rb.MovePosition(transform.position + climbDirection);
 
-        Debug.Log("Climbing. Vertical input: " + verticalInput);
+        Debug.Log("Climbing. Vertical input: " + verticalInput + " Climb direction: " + climbDirection);
     }
 
     public void TakeDamage(float amount)
