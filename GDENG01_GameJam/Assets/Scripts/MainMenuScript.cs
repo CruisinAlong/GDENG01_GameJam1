@@ -7,8 +7,21 @@ public class MainMenuScript : MonoBehaviour
 {
     public void OnStartButton()
     {
-        LoadManager.Instance.LoadScene(SceneNames.GAME_SCENE);
+        SceneManager.LoadScene("InitialScene");
     }
+
+    public void OnControls()
+    {
+        SceneManager.LoadScene("ControlsScene");
+    }
+
+    public void OnGameOver_Menu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
+
+
+
 
     public void OnExitButton()
     {

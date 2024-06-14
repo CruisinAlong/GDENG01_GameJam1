@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
             Debug.Log("Collision with Ground. isGrounded: " + isGrounded);
 
-            // Handle fall damage
+
             if (rb.velocity.y < -fallDamageThreshold)
             {
                 TakeDamage(Mathf.Abs(rb.velocity.y));

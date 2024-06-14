@@ -15,7 +15,7 @@ C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_Game
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-63100
+50013
 -job-worker-count
 7
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/ASUS/Documents/GitHub/GDENG01_GameJam_Fix/GDENG01_GameJam1/GDENG01_Game
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11348] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 3148175666 [EditorId] 3148175666 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [11348] Host "[IP] 10.15.163.41 [Port] 0 [Flags] 2 [Guid] 3148175666 [EditorId] 3148175666 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6096] Host "[IP] 192.168.100.29 [Port] 0 [Flags] 2 [Guid] 2263240899 [EditorId] 2263240899 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6096] Host "[IP] 192.168.100.29 [Port] 0 [Flags] 2 [Guid] 2263240899 [EditorId] 2263240899 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LOCDEUQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 92.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Resources/UnitySubsystems
@@ -79,46 +79,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.003970 seconds.
-- Loaded All Assemblies, in  0.356 seconds
+Registered in 0.006244 seconds.
+- Loaded All Assemblies, in  1.217 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 201 ms
+Android Extension - Scanning For ADB Devices 533 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.522 seconds
-Domain Reload Profiling: 876ms
-	BeginReloadAssembly (114ms)
+- Finished resetting the current domain, in  1.113 seconds
+Domain Reload Profiling: 2327ms
+	BeginReloadAssembly (258ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (149ms)
-		LoadAssemblies (112ms)
+	RebuildCommonClasses (280ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (563ms)
+		LoadAssemblies (252ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (147ms)
-			TypeCache.Refresh (145ms)
-				TypeCache.ScanAssembly (134ms)
+		AnalyzeDomain (557ms)
+			TypeCache.Refresh (556ms)
+				TypeCache.ScanAssembly (534ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (522ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1114ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (474ms)
+		SetupLoadedEditorAssemblies (1034ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (295ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (128ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			InitializePlatformSupportModulesInManaged (699ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -129,1005 +129,49 @@ Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ASUS\Documents\GitHub\GDENG01_GameJam_Fix\GDENG01_GameJam1\GDENG01_GameJam\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.791 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+- Loaded All Assemblies, in  3.026 seconds
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.548 seconds
-Domain Reload Profiling: 1335ms
-	BeginReloadAssembly (315ms)
+- Finished resetting the current domain, in  0.932 seconds
+Domain Reload Profiling: 3953ms
+	BeginReloadAssembly (2017ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (393ms)
-		LoadAssemblies (315ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (864ms)
+		LoadAssemblies (561ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (168ms)
-			TypeCache.Refresh (140ms)
-				TypeCache.ScanAssembly (126ms)
-			BuildScriptInfoCaches (20ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (548ms)
+		AnalyzeDomain (448ms)
+			TypeCache.Refresh (405ms)
+				TypeCache.ScanAssembly (328ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (933ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (378ms)
+		SetupLoadedEditorAssemblies (665ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (296ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (531ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3799 unused Assets / (1.7 MB). Loaded Objects now: 4452.
-Memory consumption went from 138.7 MB to 136.9 MB.
-Total: 6.585800 ms (FindLiveObjects: 0.399700 ms CreateObjectMapping: 0.469100 ms MarkObjects: 4.394300 ms  DeleteObjects: 1.322200 ms)
+Unloading 3800 unused Assets / (1.7 MB). Loaded Objects now: 4453.
+Memory consumption went from 138.8 MB to 137.2 MB.
+Total: 8.383700 ms (FindLiveObjects: 0.622700 ms CreateObjectMapping: 0.327400 ms MarkObjects: 5.762300 ms  DeleteObjects: 1.670300 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 146999.661590 seconds.
-  path: Assets/Standard Assets/Fonts/Berenika-Book.ttf
-  artifactKey: Guid(d6b78d2e91973d34eb675e341510bbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Fonts/Berenika-Book.ttf using Guid(d6b78d2e91973d34eb675e341510bbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '735c82e8a3cce8ca1045c5e7ef123e58') in 0.0966238 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.741036 seconds.
-  path: Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png
-  artifactKey: Guid(feda0c18015b3284cabbc0da85254f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png using Guid(feda0c18015b3284cabbc0da85254f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bba0b50cfe7f11e7e162ae854798bdd3') in 0.0706161 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png
-  artifactKey: Guid(ea5873cfd9158664f89459f0c9e1d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/SliderBackgroundSprite.png using Guid(ea5873cfd9158664f89459f0c9e1d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0af3a099601e368231abf77ecc647b6b') in 0.0176324 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.638509 seconds.
-  path: Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png
-  artifactKey: Guid(9e1a2edf6149977479db158e4fbf9671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png using Guid(9e1a2edf6149977479db158e4fbf9671) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06de0fdfd81defedc8aa4c740e319fe0') in 0.0808671 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.441186 seconds.
-  path: Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png
-  artifactKey: Guid(d40c191aa46654db7a426d6a1fa3aa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png using Guid(d40c191aa46654db7a426d6a1fa3aa30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '733727a631508b86f051ed6319c4981e') in 0.0836947 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/DOTween/Editor/Imgs/Footer.png
-  artifactKey: Guid(c63ab05944dee134eae449070b840828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DOTween/Editor/Imgs/Footer.png using Guid(c63ab05944dee134eae449070b840828) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '399e2f174a2112eb7542f20efe1b76b3') in 0.0185997 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png
-  artifactKey: Guid(5485e2f56028a3c4cb54f5caa167377e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png using Guid(5485e2f56028a3c4cb54f5caa167377e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3f3dfe95ac04f9aea8a9ee39fccf8f3') in 0.0206813 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png
-  artifactKey: Guid(0c6271a290ef75b4c97d58746c86c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleFullUpSprite.png using Guid(0c6271a290ef75b4c97d58746c86c5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12da2ad4803d6871d6024bb0dc4c8284') in 0.0182967 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png
-  artifactKey: Guid(9d7c6e4896067aa4fa512a00f692ac1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonTimescaleSlowUpSprite.png using Guid(9d7c6e4896067aa4fa512a00f692ac1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '348e99ce6e45753163f34844aa3ddc75') in 0.0204403 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png
-  artifactKey: Guid(5b1a64ea234fb2343b8d0686c51280de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonBrakeOverSprite.png using Guid(5b1a64ea234fb2343b8d0686c51280de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f94bf566b7bc30aa59686bed2c5ab57') in 0.0232591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png
-  artifactKey: Guid(12ef7cbdfe0e143fa858a324456c8979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/2D/Sprites/CratePinkGridSprite.png using Guid(12ef7cbdfe0e143fa858a324456c8979) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec7afdeac2b55fb13425c329a40367be') in 0.0208575 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png
-  artifactKey: Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png using Guid(1d0c184845252df44a655359de388cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '618c534c2ec3a51d48cc88056ab069f9') in 0.0200262 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png
-  artifactKey: Guid(a94c9a7eb94ceec4a8d67a1890e22e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonResetSprite.png using Guid(a94c9a7eb94ceec4a8d67a1890e22e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7ada9ff878d1004c0a7bbdf8f286c8c') in 0.0195084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png
-  artifactKey: Guid(eb5f6e2757c821940b69cf1456f7865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorOverSprite.png using Guid(eb5f6e2757c821940b69cf1456f7865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e36800d42c779131269bbbc3b9706ab') in 0.0195439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/DOTween/Editor/Imgs/Header.jpg
-  artifactKey: Guid(b71e0abacde92624c8b12591ca659dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DOTween/Editor/Imgs/Header.jpg using Guid(b71e0abacde92624c8b12591ca659dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c57298318b947a12355eb356e327ad0') in 0.0165959 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png
-  artifactKey: Guid(f588d850485d0ae479d73cf3bd0b7b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/CrossPlatformInput/Sprites/ButtonAcceleratorUpSprite.png using Guid(f588d850485d0ae479d73cf3bd0b7b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70655945f39bc46996da11fe60f70bfa') in 0.0173681 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 294.226616 seconds.
-  path: Assets/StoneUI/OtherUI_2-1K/6.png
-  artifactKey: Guid(6b685a8ef183fec4aa5ac2e0db948a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_2-1K/6.png using Guid(6b685a8ef183fec4aa5ac2e0db948a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51a01af4626e977eafc8e51231707209') in 0.0643984 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button3.png
-  artifactKey: Guid(3ff629c1ffa36984f89224bbd0e52887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button3.png using Guid(3ff629c1ffa36984f89224bbd0e52887) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20d40cf8c66a53931e7c68dc7ab2d605') in 0.0178024 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button2.png
-  artifactKey: Guid(306c8f2f330b55243a0c7b0e7d5b466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button2.png using Guid(306c8f2f330b55243a0c7b0e7d5b466c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a440d9f44404e7971b8b4349c5bd341d') in 0.0183056 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button4.png
-  artifactKey: Guid(e4d8d441364539044a57db07e0119f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button4.png using Guid(e4d8d441364539044a57db07e0119f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa736d2383957664734c9a5567b9a5c3') in 0.0208047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button12.png
-  artifactKey: Guid(829ad12c453df2b4d965ba7c205a75ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button12.png using Guid(829ad12c453df2b4d965ba7c205a75ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd44835c9dfe346b61e5520904b338815') in 0.0193964 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button19.png
-  artifactKey: Guid(d114dc74df6bab34b9d46c0e1fe5d5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button19.png using Guid(d114dc74df6bab34b9d46c0e1fe5d5ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fd838aebec1bda464565052881f7b9c') in 0.0178085 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button25.png
-  artifactKey: Guid(3647ab5049e23a14c97d14dc6daadf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button25.png using Guid(3647ab5049e23a14c97d14dc6daadf79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a074391fbf0d2b2f3647fbeb7b912fa6') in 0.0159243 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button1.png
-  artifactKey: Guid(82f550d3253b3374eb66e9f07d8b27a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button1.png using Guid(82f550d3253b3374eb66e9f07d8b27a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ed0db53ff485df1acd744f69b7bcc7e') in 0.0139435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button10.png
-  artifactKey: Guid(e18cf561778f846418c4424d38413fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button10.png using Guid(e18cf561778f846418c4424d38413fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f51efe5f2cc70a71eda80fc6a0be3e6e') in 0.0145066 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button7.png
-  artifactKey: Guid(63e9d385b5dbf24469be09f9ea3d5c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button7.png using Guid(63e9d385b5dbf24469be09f9ea3d5c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4559719dfc2b3f5a9a953a3771163df') in 0.0139054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button5.png
-  artifactKey: Guid(4a2883c718b4f3049bd73f138bc76cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button5.png using Guid(4a2883c718b4f3049bd73f138bc76cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c242832a120af779e2a6c01b84180a4') in 0.0211113 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button9.png
-  artifactKey: Guid(63a3711387b1f7c49915c6d8529ee6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button9.png using Guid(63a3711387b1f7c49915c6d8529ee6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff445e58ee3fdd9e2c443b563b5b1ef1') in 0.0167094 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button15.png
-  artifactKey: Guid(a1d6e4aba2985c24dae1a9d268489353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button15.png using Guid(a1d6e4aba2985c24dae1a9d268489353) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ec2432e6be753f84ba0c9d41ad5b5ce') in 0.0194709 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button20.png
-  artifactKey: Guid(d5f3c9b48ecd0af44bb7d5365fc39125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button20.png using Guid(d5f3c9b48ecd0af44bb7d5365fc39125) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3321599c587347ac74fdb924dd915f4') in 0.0207045 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button23.png
-  artifactKey: Guid(9b80b37517ba4e14ca0e8b12e36d41c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button23.png using Guid(9b80b37517ba4e14ca0e8b12e36d41c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0154bbcb761f6606fe0b14442a07422') in 0.0174678 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button8.png
-  artifactKey: Guid(35b9b9a16ec16a04eb8cb35abb4445ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button8.png using Guid(35b9b9a16ec16a04eb8cb35abb4445ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b7ae7cf79fdf826aaacdf1b34906aa0') in 0.0187852 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button11.png
-  artifactKey: Guid(c5f10dcb068737d4c8512af211087641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button11.png using Guid(c5f10dcb068737d4c8512af211087641) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39257a5ee1c48fb08cd33c56daa3ec72') in 0.0192715 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button21.png
-  artifactKey: Guid(f51c45bfd1a584c4691fcaf655f4d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button21.png using Guid(f51c45bfd1a584c4691fcaf655f4d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '523be2180baa06eedcc0c1335aa3e874') in 0.0192509 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.447877 seconds.
-  path: Assets/StoneUI/OrherUI_4-2K/5.png
-  artifactKey: Guid(ef4a8d855fd835e42b625eb8c707a861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OrherUI_4-2K/5.png using Guid(ef4a8d855fd835e42b625eb8c707a861) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71f2520a7452a9c82b75410b08f243b1') in 0.0706792 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.064392 seconds.
-  path: Assets/StoneUI/OrherUI_4-2K/4.png
-  artifactKey: Guid(66f0952bca521c640813e789d988aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OrherUI_4-2K/4.png using Guid(66f0952bca521c640813e789d988aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03f831bb758b3eaefa37e4721f2b4b20') in 0.0910223 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.744812 seconds.
-  path: Assets/StoneUI/OrherUI_4-2K/3.png
-  artifactKey: Guid(bf863c1f5968393428ffda61834c097c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OrherUI_4-2K/3.png using Guid(bf863c1f5968393428ffda61834c097c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91ec4dcbba0cb558e5f43df2f7e8f027') in 0.0500361 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 215.364107 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '507186e436703be2ee30174468941140') in 0.0396177 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 140.500554 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button29.png
-  artifactKey: Guid(4e3834b121c1c874b8f88aa49931114f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button29.png using Guid(4e3834b121c1c874b8f88aa49931114f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7afe27d8b29302452eb9100283e18d95') in 0.0202984 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button30.png
-  artifactKey: Guid(0fb70a730df9a3940a6aa7ec9580f17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button30.png using Guid(0fb70a730df9a3940a6aa7ec9580f17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75f038af18e44b96debb40e72f0fc339') in 0.0209429 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button34.png
-  artifactKey: Guid(61dab6ba4ccb1f34494f5f497be281a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button34.png using Guid(61dab6ba4ccb1f34494f5f497be281a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd88c8d13c5b9b7ab1c77ca74d63db989') in 0.0224962 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button35.png
-  artifactKey: Guid(8c64cea1763634e478424c073dcfc414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button35.png using Guid(8c64cea1763634e478424c073dcfc414) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c14c34f23140e55dafd05adafddb23c') in 0.021038 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.019590 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button37.png
-  artifactKey: Guid(10656f67a639c144d82c9e2d1f05dc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button37.png using Guid(10656f67a639c144d82c9e2d1f05dc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e62b0de98200066e8c3ae756f4f76ca2') in 0.0220745 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button44.png
-  artifactKey: Guid(d5eb8ed269db47d41a3fb9ed88134ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button44.png using Guid(d5eb8ed269db47d41a3fb9ed88134ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c37eadae68fa2b7a5a0ecf2d0a9278ad') in 0.0206305 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button47.png
-  artifactKey: Guid(5c4cac1c22f98af4291c480bc3c68cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button47.png using Guid(5c4cac1c22f98af4291c480bc3c68cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c90ebd131c0e344a2ffcd3da4b600ba9') in 0.0219547 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button38.png
-  artifactKey: Guid(476e143a9b3657345940bbc73c1a671e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button38.png using Guid(476e143a9b3657345940bbc73c1a671e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c569a0b7cd79de5a60449b4bd55ff8b') in 0.0210871 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button40.png
-  artifactKey: Guid(69502b55dcb13f84c9f574d589ad0fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button40.png using Guid(69502b55dcb13f84c9f574d589ad0fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fe784b8633b0514e55bbee16b223531') in 0.0215526 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button39.png
-  artifactKey: Guid(6a056d2b013f22c4f8cad26fc255c890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button39.png using Guid(6a056d2b013f22c4f8cad26fc255c890) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '492d7dc37a922af704e635d33c5c7b95') in 0.0189534 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button51.png
-  artifactKey: Guid(63378d5b7a54baf4cb96f18a10a99b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button51.png using Guid(63378d5b7a54baf4cb96f18a10a99b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6313edf49d160cdeff577dfd3395657') in 0.0196578 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button49.png
-  artifactKey: Guid(6fd2c74b0f6ddd24985ba59ade960f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button49.png using Guid(6fd2c74b0f6ddd24985ba59ade960f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a8a433f30411cc0dda617c21566ece4') in 0.0197333 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.389020 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button53.png
-  artifactKey: Guid(81aa3576fe2b89840ad0e62cf3c72ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button53.png using Guid(81aa3576fe2b89840ad0e62cf3c72ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e931c5530987c4e4597506975901bb4b') in 0.0215253 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button56.png
-  artifactKey: Guid(12f88edb1a122d042b4b8e1e96dd285c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button56.png using Guid(12f88edb1a122d042b4b8e1e96dd285c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ab3c1e7b6f030d4f04a8c13d4154247') in 0.02324 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button54.png
-  artifactKey: Guid(68f524515f5d5d749b94a6d6460c61a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button54.png using Guid(68f524515f5d5d749b94a6d6460c61a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a17d9f3c79819bd14e25f3cbabf1024c') in 0.0211664 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button58.png
-  artifactKey: Guid(ba0fc84c937a69341b9b85c0f958bb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button58.png using Guid(ba0fc84c937a69341b9b85c0f958bb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77e4f36f3c5440d32279d4f7d21c4c65') in 0.0229833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.466996 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button61.png
-  artifactKey: Guid(f2154a889a3c0924cb2c403d4a2c59ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button61.png using Guid(f2154a889a3c0924cb2c403d4a2c59ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2c0707bf9c321c96a40879b7a10d060') in 0.0233437 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button63.png
-  artifactKey: Guid(205a2fa8a8149284fb28f2bf075af123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button63.png using Guid(205a2fa8a8149284fb28f2bf075af123) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db2a2b34b9817741d56997304ba8c00f') in 0.0240091 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button70.png
-  artifactKey: Guid(6b6b20b529f09804c81701bc127d716e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button70.png using Guid(6b6b20b529f09804c81701bc127d716e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2391c423a7888108febabeaa750b2894') in 0.0233174 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button69.png
-  artifactKey: Guid(b337b0b0c914bc94a814ea0626906e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button69.png using Guid(b337b0b0c914bc94a814ea0626906e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '077bf356a2d4f87d0ad6b2946a3c0672') in 0.0236558 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button65.png
-  artifactKey: Guid(bbaeec0cbf64d6848b11e9638aa826f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button65.png using Guid(bbaeec0cbf64d6848b11e9638aa826f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ab3b3a1940f0569e4ba03fce57ca8a0') in 0.025551 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button68.png
-  artifactKey: Guid(8fc2efa5bc6fe9d4094de16bca215364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button68.png using Guid(8fc2efa5bc6fe9d4094de16bca215364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8dfa9af61375f04125e1c7c48d92474') in 0.0214566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button79.png
-  artifactKey: Guid(74b380d89121e394792dda0f3424e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button79.png using Guid(74b380d89121e394792dda0f3424e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '514a94afe433a47f8ee23dcf623b57fe') in 0.0219311 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button77.png
-  artifactKey: Guid(6f36eb2e69399514d95b0e397f1bef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button77.png using Guid(6f36eb2e69399514d95b0e397f1bef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa7893cc6310d1a1b97cab20dddff9c2') in 0.0217307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button81.png
-  artifactKey: Guid(76585e1da260e4f4c9d1f145592296f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button81.png using Guid(76585e1da260e4f4c9d1f145592296f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e09b7fd735ed3695999daa0b03030f6c') in 0.0234738 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button82.png
-  artifactKey: Guid(b761abd516a85ca46acbfc53bbc911b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button82.png using Guid(b761abd516a85ca46acbfc53bbc911b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1314ca735797f14ba27385ee18e4adf5') in 0.022725 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button73.png
-  artifactKey: Guid(1cfbfe19c5b00004e9fcc27c3f950ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button73.png using Guid(1cfbfe19c5b00004e9fcc27c3f950ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e41aae0439c625afb5c34bbb797cebac') in 0.0236672 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button64.png
-  artifactKey: Guid(099e8a99eb303b1459be1d8252110324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button64.png using Guid(099e8a99eb303b1459be1d8252110324) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5f71814015e12ce485e61b035ae7fa4') in 0.022834 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.192812 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button85.png
-  artifactKey: Guid(862e40858f72d3b4ca656983b0726fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button85.png using Guid(862e40858f72d3b4ca656983b0726fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a42e1e9bb12886649fc6b41ff87ad7f') in 0.0273187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button92.png
-  artifactKey: Guid(454e2168f3094dd4c924ee6fed902e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button92.png using Guid(454e2168f3094dd4c924ee6fed902e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ceba78046088c136e26a400b9ff3b44a') in 0.0208645 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button87.png
-  artifactKey: Guid(69d935fd3e4c870499c993e4cdfd8bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button87.png using Guid(69d935fd3e4c870499c993e4cdfd8bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e043b2c581eca5e6bd59f313c87e3b6') in 0.0238575 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/StoneUI/Samples/button_moss_blue.png
-  artifactKey: Guid(6a494d089fecba241abe56a6241e4b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Samples/button_moss_blue.png using Guid(6a494d089fecba241abe56a6241e4b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a32e8cb68ffe110db20e65e9068ecdc') in 0.0239131 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue5.png
-  artifactKey: Guid(348a9ad30d5c48b4eab896d1a7cd320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue5.png using Guid(348a9ad30d5c48b4eab896d1a7cd320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '937cb3220c8bf624c1b68e949d9b5265') in 0.0238825 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue4.png
-  artifactKey: Guid(2c5fb807cda761949b470bf01c4b5cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue4.png using Guid(2c5fb807cda761949b470bf01c4b5cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07fcdeefc0928db577994102e0e14b69') in 0.0262037 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue1.png
-  artifactKey: Guid(236328a9dcc1cea4ea7fdc8f85dc90a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue1.png using Guid(236328a9dcc1cea4ea7fdc8f85dc90a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1a9aba9b61f2d5467e74e721577c943') in 0.0249672 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue13.png
-  artifactKey: Guid(569a923c2528f534094780108913bc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue13.png using Guid(569a923c2528f534094780108913bc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '177de4f4e0862d1bdb34dd4ab023bf26') in 0.0284849 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue9.png
-  artifactKey: Guid(45a45baf129d4474fae5c9f5b6b6e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue9.png using Guid(45a45baf129d4474fae5c9f5b6b6e2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'deb4310ba8deff90b97719525c3a2f75') in 0.0257236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue7.png
-  artifactKey: Guid(8a6330648fa06c9408c7a3bb2d0cb8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue7.png using Guid(8a6330648fa06c9408c7a3bb2d0cb8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a30bdab7d75c3a7a136df0cdf0044143') in 0.0249381 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue14.png
-  artifactKey: Guid(f70b403fd8541ad45a9e4e6eb63e74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue14.png using Guid(f70b403fd8541ad45a9e4e6eb63e74c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e3595d87296ab3a833eee39283779f8') in 0.0273476 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/OtherUI_4k+/button89.png
-  artifactKey: Guid(669d633372178434d89ac9a65b513fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/OtherUI_4k+/button89.png using Guid(669d633372178434d89ac9a65b513fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfe2660289ba0b5998294b3629403829') in 0.0227241 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038293 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue16.png
-  artifactKey: Guid(7023617ce2263cc488d16688087d4a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue16.png using Guid(7023617ce2263cc488d16688087d4a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ddea888bd935fea2a03b3e03f72beb7') in 0.0245518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue18.png
-  artifactKey: Guid(29c6b1666b7fae64eb2804d2d548724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue18.png using Guid(29c6b1666b7fae64eb2804d2d548724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7060d3dff7d9f3c6357ccac5e339af1e') in 0.0254596 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue17.png
-  artifactKey: Guid(fac5b2310ad62b044b05b42c92c63a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue17.png using Guid(fac5b2310ad62b044b05b42c92c63a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14effb4183f49936452a01fb2c3a1748') in 0.0230157 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue20.png
-  artifactKey: Guid(02fa90b5e6b167c4f80acb97a9795cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue20.png using Guid(02fa90b5e6b167c4f80acb97a9795cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6d7004d5ecb68921000326136c6b891') in 0.0230536 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.670121 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue24.png
-  artifactKey: Guid(f415f53f0663a744599fe201168b7929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue24.png using Guid(f415f53f0663a744599fe201168b7929) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f361e8b9d20acbc13367ea37673380df') in 0.0295509 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue29.png
-  artifactKey: Guid(6bc1349f6a52aaf4487a9a83eecc801b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue29.png using Guid(6bc1349f6a52aaf4487a9a83eecc801b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be0ed14290f174981861e84a4b3ee35e') in 0.0288938 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue34.png
-  artifactKey: Guid(1314205300f51bc419aa0cc076108250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue34.png using Guid(1314205300f51bc419aa0cc076108250) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa712b313c4df1693a10b000e0a8a1c5') in 0.025819 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue26.png
-  artifactKey: Guid(9057840e73cc8af46b3fb5a3b73e3a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue26.png using Guid(9057840e73cc8af46b3fb5a3b73e3a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79dc660eb36be9fe5b8e2a37d02b1e65') in 0.0221539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue32.png
-  artifactKey: Guid(8b258aeaacda8d041b66900af3dbfe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue32.png using Guid(8b258aeaacda8d041b66900af3dbfe6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd10b63ab09ca7c3fe75256e67024f3b0') in 0.0253493 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue27.png
-  artifactKey: Guid(ee8346b6517631c41833c92aa160e5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue27.png using Guid(ee8346b6517631c41833c92aa160e5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e49ecdfe31f1e99b44c21b2c269c9b82') in 0.023601 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue35.png
-  artifactKey: Guid(4e7d4988e8f60f84288fea9708743d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue35.png using Guid(4e7d4988e8f60f84288fea9708743d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0bdcb25d00b00a4a4e27b7055b745067') in 0.0242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue33.png
-  artifactKey: Guid(0ad19475630f9dc43ad0cedd042a0a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue33.png using Guid(0ad19475630f9dc43ad0cedd042a0a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b693747a36213794180c89a1ade38717') in 0.0251775 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.114633 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue40.png
-  artifactKey: Guid(e4d6c46e154dc6e49a356ba605f17545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue40.png using Guid(e4d6c46e154dc6e49a356ba605f17545) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88f0195a23f1034bd6e8027795cee665') in 0.0238258 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue46.png
-  artifactKey: Guid(334685a5eefd1ff4295394c8abf033f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue46.png using Guid(334685a5eefd1ff4295394c8abf033f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19129db24858a82c5545a8f79a335528') in 0.0247614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue43.png
-  artifactKey: Guid(632e4754e00985642ac6e1fcce39415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue43.png using Guid(632e4754e00985642ac6e1fcce39415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4321b112695c240d7dd6621606d563aa') in 0.028498 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue45.png
-  artifactKey: Guid(4589e2bdcae0eff469f70f0d960d36d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue45.png using Guid(4589e2bdcae0eff469f70f0d960d36d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4cbad14626cff145b5d33effef14aa0') in 0.0243864 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028575 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue48.png
-  artifactKey: Guid(17909212a82b6c9448220726d192708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue48.png using Guid(17909212a82b6c9448220726d192708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83eb7aea6aa3b83cd5cb64ba3fd077d9') in 0.0238691 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/StoneUI/Buttons_256x256/button_moss_blue.png
-  artifactKey: Guid(64a7c8f38d213274f8f497bb697b41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_256x256/button_moss_blue.png using Guid(64a7c8f38d213274f8f497bb697b41a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ead1f6f758a9ceda9cbc0c74ef305edc') in 0.2333858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue49.png
-  artifactKey: Guid(01b177a7da31ff0469c19b740f6a0558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Blue/button_moss_blue49.png using Guid(01b177a7da31ff0469c19b740f6a0558) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a12df432ede0fb9386c3661b1d9f504') in 0.025636 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.949418 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green1.png
-  artifactKey: Guid(2c515502e486a5144b737191aa6bfbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green1.png using Guid(2c515502e486a5144b737191aa6bfbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dbadd4f3d9b78aba5217255c6bbad63') in 0.0258053 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green4.png
-  artifactKey: Guid(955735b8f107b7a45a87ecebbb4deabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green4.png using Guid(955735b8f107b7a45a87ecebbb4deabb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3c64ba3ec902cb77b7da2ed410a632c') in 0.0260518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green7.png
-  artifactKey: Guid(5768e6ce42d6b764ca14e876b7c43b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green7.png using Guid(5768e6ce42d6b764ca14e876b7c43b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42d1fd46df5d52d5b0ec124b4020fe62') in 0.025145 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green3.png
-  artifactKey: Guid(8becb0c556eb00043a1c89c7adfc1154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green3.png using Guid(8becb0c556eb00043a1c89c7adfc1154) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '075744fb989d4030df72f6b8c2a01252') in 0.0298674 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.254006 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green9.png
-  artifactKey: Guid(bb084099b7d0ec94bb9a9b79efe7a4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green9.png using Guid(bb084099b7d0ec94bb9a9b79efe7a4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76fa2953b6cf9941b941f75966d1f63d') in 0.0677749 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green34.png
-  artifactKey: Guid(eba4ee1cbe06ff243b8aac3d8df35077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green34.png using Guid(eba4ee1cbe06ff243b8aac3d8df35077) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56216c8109422aedaf9f8ddd507b8891') in 0.050105 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green15.png
-  artifactKey: Guid(bd8d8b9845c0dc64997f20c4135ef8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green15.png using Guid(bd8d8b9845c0dc64997f20c4135ef8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a7d7af04bfd674dcab40792b0e5bafa') in 0.0469515 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green19.png
-  artifactKey: Guid(b4574d9e2ab4ecc48b598f00c121673e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green19.png using Guid(b4574d9e2ab4ecc48b598f00c121673e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9f978c671fab6ac747423bbf2d48867') in 0.0555778 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green48.png
-  artifactKey: Guid(0fc497df52237f14eb9e7f64f4c32733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green48.png using Guid(0fc497df52237f14eb9e7f64f4c32733) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e2d68744fc182edd4f736abd3a941f4') in 0.0529204 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green21.png
-  artifactKey: Guid(634f455b4d219c3488817a19ba4c9fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green21.png using Guid(634f455b4d219c3488817a19ba4c9fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f8c79a5d13d27ab276dd5e9218bed11') in 0.02913 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green22.png
-  artifactKey: Guid(8ab50749ac9f79243b62963526ae415f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green22.png using Guid(8ab50749ac9f79243b62963526ae415f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '548ff181840d2f5fd310d350cc7488ef') in 0.0275134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green25.png
-  artifactKey: Guid(c4f21dc4ad5a1944d846f3e3533ad1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green25.png using Guid(c4f21dc4ad5a1944d846f3e3533ad1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8ea83bf026d6f7463e2874c26f7e271') in 0.0273912 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green12.png
-  artifactKey: Guid(4ea1a3fa55fb9f840ad9c7d6826cdc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green12.png using Guid(4ea1a3fa55fb9f840ad9c7d6826cdc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ab6542d809a6d6426100802a3041d6d') in 0.0260589 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green27.png
-  artifactKey: Guid(aeec23f89435eb445a69a6817c85762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green27.png using Guid(aeec23f89435eb445a69a6817c85762b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43208e226959cc9908e776a1263c9ca6') in 0.0265679 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green32.png
-  artifactKey: Guid(82ba119c5de121d4e8aa7ba03e991e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green32.png using Guid(82ba119c5de121d4e8aa7ba03e991e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c18778ad8d18a6c70e2b808a45757953') in 0.0247215 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green40.png
-  artifactKey: Guid(01c606f48ae1bdb468a5dea49fb4b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green40.png using Guid(01c606f48ae1bdb468a5dea49fb4b1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbfe87a92f46a2e3c2e21a08e2b6f54e') in 0.0233245 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green35.png
-  artifactKey: Guid(fcfea0764b5c24b4b8c8f471240e5c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green35.png using Guid(fcfea0764b5c24b4b8c8f471240e5c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87f7e8eb215884bcd2e5f32735c40330') in 0.025034 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green33.png
-  artifactKey: Guid(56ae9bfe349bfc647affe8176fa88371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green33.png using Guid(56ae9bfe349bfc647affe8176fa88371) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7aaeeb544857001fac093f4a2c723a4c') in 0.0265323 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green24.png
-  artifactKey: Guid(1053765004e93054db589b11b47d24f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green24.png using Guid(1053765004e93054db589b11b47d24f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c923a35f1ef14e732b3c783aabaab40') in 0.0240828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green14.png
-  artifactKey: Guid(fd4c97047c9dd004bae0b5014f72fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green14.png using Guid(fd4c97047c9dd004bae0b5014f72fb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15e5979f6815f691a8cc280534534c5a') in 0.0243729 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green28.png
-  artifactKey: Guid(2732629b31e09b84b91a83e402308a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green28.png using Guid(2732629b31e09b84b91a83e402308a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e62262a9dcdf7a36dfa3e07f21c93760') in 0.0249224 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green49.png
-  artifactKey: Guid(82548db7cb86e1e4dacde21ddf64b671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StoneUI/Buttons_512x512/Moss_Green/button_moss_green49.png using Guid(82548db7cb86e1e4dacde21ddf64b671) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3df808a0556980f57570f2eda1366bc') in 0.0224804 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
