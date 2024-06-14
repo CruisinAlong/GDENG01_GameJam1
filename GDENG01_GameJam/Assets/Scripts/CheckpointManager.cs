@@ -46,7 +46,6 @@ public class CheckpointManager : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.Log("Game Over!");
         SceneManager.LoadScene("Game Over"); 
     }
 

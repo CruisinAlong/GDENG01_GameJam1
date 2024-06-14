@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private float currentHealth;
 
     private Vector3 moveDirection = Vector3.zero;
+    public CheckpointManager checkpointManager;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+        checkpointManager = FindAnyObjectByType<CheckpointManager>();
     }
 
     void Update()
@@ -217,6 +219,10 @@ public class PlayerController : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("Player has died.");
+            if (checkpointManager != null)
+            {
+                checkpointManager.PlayerDied();
+            }
         }
     }
 }
