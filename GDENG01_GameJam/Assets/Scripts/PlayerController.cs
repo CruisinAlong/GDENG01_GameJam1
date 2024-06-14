@@ -17,38 +17,39 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float climbSpeed = 5.0f;
     [SerializeField] private string climbableTag = "Climbable";
     [SerializeField] private Slider jumpForceSlider;
-    [SerializeField] private Slider healthSlider; 
-    [SerializeField] private float maxHealth = 100f; 
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float fallDamageThreshold = 10f;
 
     private Animator animator;
     private Rigidbody rb;
     private float turnSmoothVelocity;
-    private bool isGrounded =false;
+    public bool isGrounded = false;
     private bool isJumping = false;
     private bool jumpKeyHeld = false;
     private float jumpTimeCounter;
     private bool isClimbing;
     private Collider climbableObject;
-    private float currentHealth; 
+    private float currentHealth;
 
     private Vector3 moveDirection = Vector3.zero;
 
     void Start()
     {
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         jumpForceSlider.minValue = baseJumpForce;
         jumpForceSlider.maxValue = maxJumpForce * chargedJumpMultiplier;
         jumpForceSlider.value = baseJumpForce;
 
-        currentHealth = maxHealth; 
+        currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
     }
 
     void Update()
     {
+        Debug.Log("Update called");
         this.InputListener();
 
         if (isClimbing)
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             isJumping = false;
+            Debug.Log("Collision with Ground. isGrounded: " + isGrounded);
 
             // Handle fall damage
             if (rb.velocity.y < -fallDamageThreshold)
@@ -84,6 +86,7 @@ public class PlayerController : MonoBehaviour
             climbableObject = other;
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
+            Debug.Log("Entered Climbable area");
         }
     }
 
@@ -94,6 +97,7 @@ public class PlayerController : MonoBehaviour
             isClimbing = false;
             climbableObject = null;
             rb.useGravity = true;
+            Debug.Log("Exited Climbable area");
         }
     }
 
@@ -106,22 +110,27 @@ public class PlayerController : MonoBehaviour
                 jumpKeyHeld = true;
                 isJumping = true;
                 jumpTimeCounter = 0f;
+                Debug.Log("Space key down. Jump started.");
             }
             else if (Input.GetKey(KeyCode.Space) && isJumping)
             {
                 jumpTimeCounter += Time.deltaTime;
                 UpdateJumpForceSlider();
+                Debug.Log("Space key held. Jump time counter: " + jumpTimeCounter);
             }
             else if (Input.GetKeyUp(KeyCode.Space) && isJumping)
             {
                 isGrounded = false;
                 isJumping = false;
                 jumpKeyHeld = false;
-                isGrounded = false;
-                isJumping = false;
 
                 StartJump();
+                Debug.Log("Space key up. Jump executed.");
             }
+        }
+        else
+        {
+            Debug.Log("Player is not grounded.");
         }
     }
 
@@ -147,6 +156,8 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(jumpDirection * Time.deltaTime);
         jumpForceSlider.value = baseJumpForce;
+
+        Debug.Log("Jump direction: " + jumpDirection + " Jump force: " + jumpForce);
     }
 
     private void UpdateJumpForceSlider()
@@ -158,6 +169,8 @@ public class PlayerController : MonoBehaviour
             jumpForce *= chargedJumpMultiplier;
         }
         jumpForceSlider.value = jumpForce;
+
+        Debug.Log("Updated jump force slider: " + jumpForce);
     }
 
     private void Move()
@@ -166,19 +179,22 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(direction.magnitude >= 0.1f) 
+        if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + playerCamera.transform.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y,targetAngle,ref turnSmoothVelocity,turnSmoothTime);
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
             animator.SetBool("IsMoving", true);
+
+            Debug.Log("Moving. Direction: " + direction + " Target angle: " + targetAngle);
         }
         else
         {
             animator.SetBool("IsMoving", false);
+            Debug.Log("Stopped moving.");
         }
     }
 
@@ -187,8 +203,9 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 climbDirection = new Vector3(0, verticalInput * climbSpeed * Time.deltaTime, 0);
         rb.MovePosition(transform.position + climbDirection);
-    }
 
+        Debug.Log("Climbing. Vertical input: " + verticalInput);
+    }
 
     public void TakeDamage(float amount)
     {
@@ -196,9 +213,10 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         healthSlider.value = currentHealth;
 
+        Debug.Log("Took damage: " + amount + " Current health: " + currentHealth);
+
         if (currentHealth <= 0)
         {
-
             Debug.Log("Player has died.");
         }
     }
