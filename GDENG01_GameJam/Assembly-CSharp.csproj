@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\ViewHandler\ViewAnimation\DOViewAnimation.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\ViewHandler.cs" />
     <Compile Include="Assets\Scripts\Broadcasting\EventBroadcaster.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\Popups\DialogBuilder.cs" />
     <Compile Include="Assets\Scripts\ViewHandler\ViewAnimation.cs" />
     <Compile Include="Assets\Scripts\Broadcasting\Parameters.cs" />
