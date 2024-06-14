@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheckpointManager : MonoBehaviour
 {
@@ -10,9 +10,7 @@ public class CheckpointManager : MonoBehaviour
     private Vector3 respawnPosition;
     private int currentLives;
 
-
     [SerializeField] private TextMeshProUGUI livesText;
-
 
     void Start()
     {
@@ -21,12 +19,10 @@ public class CheckpointManager : MonoBehaviour
         UpdateLivesUI();
     }
 
-
     public void SetCheckpoint(Vector3 newCheckpoint)
     {
         respawnPosition = newCheckpoint;
     }
-
 
     public void PlayerDied()
     {
@@ -43,18 +39,16 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
-
     private void RespawnPlayer()
     {
         player.position = respawnPosition;
     }
 
-
     private void GameOver()
     {
         Debug.Log("Game Over!");
+        SceneManager.LoadScene("Game Over"); 
     }
-
 
     private void UpdateLivesUI()
     {
