@@ -715,34 +715,34 @@ AnimatorStateMachine:
     m_Position: {x: 792, y: 324, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102635382796221860}
-    m_Position: {x: 792, y: 72, z: 0}
+    m_Position: {x: 820, y: -70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102872702011382600}
-    m_Position: {x: 792, y: 24, z: 0}
+    m_Position: {x: 820, y: -120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102421402161273378}
-    m_Position: {x: 1008, y: 24, z: 0}
+    m_Position: {x: 1110, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102930749543856260}
-    m_Position: {x: 1008, y: 72, z: 0}
+    m_Position: {x: 1220, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102414701294786830}
     m_Position: {x: 320, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102723739437390148}
-    m_Position: {x: 1224, y: 72, z: 0}
+    m_Position: {x: 780, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102097913726934338}
     m_Position: {x: 530, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102003536358159248}
-    m_Position: {x: 1224, y: 120, z: 0}
+    m_Position: {x: 860, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102075184184080350}
     m_Position: {x: 1440, y: 24, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102274922726278086}
-    m_Position: {x: 790, y: 130, z: 0}
+    m_Position: {x: 1040, y: -90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102635579427550910}
     m_Position: {x: 1008, y: 228, z: 0}
@@ -775,7 +775,7 @@ AnimatorStateMachine:
     m_Position: {x: 576, y: 228, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102662826810688700}
-    m_Position: {x: 576, y: 24, z: 0}
+    m_Position: {x: 580, y: 20, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -871,6 +871,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: IsJumping
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: IsMoving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102097913726934338}

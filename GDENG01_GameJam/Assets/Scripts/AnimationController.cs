@@ -4,17 +4,30 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
+    private Animator animator;
+    private PlayerController playerController;
 
-    Animator animator;
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        playerController = GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnAnimatorMove()
     {
-        
+        if (playerController.isGrounded)
+        {
+            transform.position = animator.rootPosition;
+        }
+    }
+
+    public void SetJumping(bool isJumping)
+    {
+        animator.SetBool("IsJumping", isJumping);
+    }
+
+    public void SetMoving(bool isMoving)
+    {
+        animator.SetBool("IsMoving", isMoving);
     }
 }
