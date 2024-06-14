@@ -49,7 +49,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         this.InputListener();
-
         if (isClimbing)
         {
             this.Climb();
@@ -136,13 +135,13 @@ public class PlayerController : MonoBehaviour
             jumpForce = Mathf.Lerp(baseJumpForce, maxJumpForce, clampedJumpTime / maxJumpTime);
         }
 
-        Vector3 forwardDirection = playerCamera.transform.forward;
+        Vector3 forwardDirection = transform.forward;
         forwardDirection.y = 0;
         forwardDirection.Normalize();
 
         Vector3 jumpDirection = forwardDirection * forwardJumpMultiplier * (jumpForce / maxJumpForce) + Vector3.up * jumpForce;
-
-        rb.velocity = new Vector3(jumpDirection.x, jumpDirection.y, jumpDirection.z);
+        rb.AddForce(jumpDirection, ForceMode.VelocityChange);
+        //rb.velocity = jumpDirection;
         jumpForceSlider.value = baseJumpForce;
     }
 
@@ -170,11 +169,13 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            moveDirection.y += Physics.gravity.y * 10f;
 
             rb.velocity = moveDirection * speed * Time.deltaTime;
           
             animator.SetBool("IsMoving", true);
         }
+
         else
         {
             animator.SetBool("IsMoving", false);
